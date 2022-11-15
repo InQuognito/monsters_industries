@@ -57,4 +57,5 @@ execute if score villagerScaledPaperTeam2 price > villagerBasePaper price run sc
 execute if score neuronWormScaledTokenTeam1 price > neuronWormBaseToken price run scoreboard players operation neuronWormScaledTokenTeam1 price -= deflation vars
 execute if score neuronWormScaledTokenTeam2 price > neuronWormBaseToken price run scoreboard players operation neuronWormScaledTokenTeam2 price -= deflation vars
 
-execute if score $powerPlant map matches 1 run function mi:maps/power_plant/logic/mob_shop/update_prices
+execute if score $powerPlant map matches 1 as @r[team=team1] run function mi:maps/power_plant/logic/mob_shop/update_prices
+execute if score $powerPlant map matches 1 as @r[team=team2] run function mi:maps/power_plant/logic/mob_shop/update_prices
