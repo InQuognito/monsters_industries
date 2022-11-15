@@ -79,7 +79,9 @@ scoreboard players set #lever price 768
 
 # Mobs
 scoreboard players set zombieBasePaper price 8
+scoreboard players operation zombieScaledPaper price = zombieBasePaper price
 scoreboard players set zombieBaseCoal price 4
+scoreboard players operation zombieScaledCoal price = zombieBaseCoal price
 
 scoreboard players set #huskBasePaper price 12
 scoreboard players set #huskBaseCoal price 6
