@@ -17,5 +17,5 @@ execute store result score #strayEggCount temp run clear @s minecraft:stray_spaw
 execute store result score #villagerEggCount temp run clear @s minecraft:villager_spawn_egg{villager:1} 0
 execute store result score #vindicatorEggCount temp run clear @s minecraft:vindicator_spawn_egg{vindicator:1} 0
 execute store result score #witchEggCount temp run clear @s minecraft:witch_spawn_egg{witch:1} 0
-execute store result score #zombieEggCount temp run clear @s minecraft:zombie_spawn_egg{zombie:1} 0
-execute store result score #zombieVillagerEggCount temp run clear @s minecraft:zombie_villager_spawn_egg{zombieVillager:1} 0
+execute store result score zombieEggCount temp run clear @s minecraft:zombie_spawn_egg{zombie:1} 0
+execute store result score zombieVillagerEggCount temp run clear @s minecraft:zombie_villager_spawn_egg{zombieVillager:1} 0

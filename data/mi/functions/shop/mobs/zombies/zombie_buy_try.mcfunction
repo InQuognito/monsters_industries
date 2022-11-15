@@ -1,9 +1,9 @@
 function mi:logic/convert_currency_scoreboards
 function mi:logic/currency/reset_temp_prices
 
-scoreboard players operation #paperPrice temp = #zombieScaledPaper price
+scoreboard players operation #paperPrice temp = zombieScaledPaper price
 scoreboard players operation #paperPrice temp *= #mobShopMult temp
-scoreboard players operation #coalPrice temp = #zombieScaledCoal price
+scoreboard players operation #coalPrice temp = zombieScaledCoal price
 scoreboard players operation #coalPrice temp *= #mobShopMult temp
 
 execute unless score #temp ct.paper >= #paperPrice temp run title @s actionbar [{"text":"You don't have enough paper to purchase this many ","color":"red"},{"text":"Zombies","color":"dark_green"},{"text":"!","color":"red"}]

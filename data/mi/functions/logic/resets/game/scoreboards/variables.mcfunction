@@ -78,8 +78,8 @@ scoreboard players set #paperProduction3 price 256
 scoreboard players set #lever price 768
 
 # Mobs
-scoreboard players set #zombieBasePaper price 8
-scoreboard players set #zombieBaseCoal price 4
+scoreboard players set zombieBasePaper price 8
+scoreboard players set zombieBaseCoal price 4
 
 scoreboard players set #huskBasePaper price 12
 scoreboard players set #huskBaseCoal price 6

@@ -1,5 +1,5 @@
-execute if score #zombieScaledPaper price > #zombieBasePaper price run scoreboard players operation #zombieScaledPaper price -= deflation vars
-execute if score #zombieScaledCoal price > #zombieBaseCoal price run scoreboard players operation #zombieScaledCoal price -= deflation vars
+execute if score zombieScaledPaper price > zombieBasePaper price run scoreboard players operation zombieScaledPaper price -= deflation vars
+execute if score zombieScaledCoal price > zombieBaseCoal price run scoreboard players operation zombieScaledCoal price -= deflation vars
 
 execute if score #huskScaledPaper price > #huskBasePaper price run scoreboard players operation #huskScaledPaper price -= deflation vars
 execute if score #huskScaledCoal price > #huskBaseCoal price run scoreboard players operation #huskScaledCoal price -= deflation vars
