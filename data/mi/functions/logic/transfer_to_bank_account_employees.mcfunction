@@ -192,12 +192,12 @@ execute if entity @s[team=team1] as @a[team=team1] if score @s ct.coal < #coalMa
 execute if entity @s[team=team2] as @a[team=team2] if score @s ct.coal < #coalMax vars run scoreboard players operation @s ct.coal += #employeeCoal temp
 execute if entity @s[team=team1] as @a[team=team1] if score @s ct.bone < #boneMax vars run scoreboard players operation @s ct.bone += #employeeBone temp
 execute if entity @s[team=team2] as @a[team=team2] if score @s ct.bone < #boneMax vars run scoreboard players operation @s ct.bone += #employeeBone temp
-execute if entity @s[team=team1] as @a[team=team1] if score @s ct.spiderEye < #spiderEyeMax vars run scoreboard players operation @s ct.spiderEye += #employeeSpiderEye temp
-execute if entity @s[team=team2] as @a[team=team2] if score @s ct.spiderEye < #spiderEyeMax vars run scoreboard players operation @s ct.spiderEye += #employeeSpiderEye temp
+execute if entity @s[team=team1] as @a[team=team1] if score @s ct.spiderEye < spiderEyeMax vars run scoreboard players operation @s ct.spiderEye += #employeeSpiderEye temp
+execute if entity @s[team=team2] as @a[team=team2] if score @s ct.spiderEye < spiderEyeMax vars run scoreboard players operation @s ct.spiderEye += #employeeSpiderEye temp
 execute if entity @s[team=team1] as @a[team=team1] if score @s ct.gunpowder < #gunpowderMax vars run scoreboard players operation @s ct.gunpowder += #employeeGunpowder temp
 execute if entity @s[team=team2] as @a[team=team2] if score @s ct.gunpowder < #gunpowderMax vars run scoreboard players operation @s ct.gunpowder += #employeeGunpowder temp
-execute if entity @s[team=team1] as @a[team=team1] if score @s ct.slimeball < #slimeballMax vars run scoreboard players operation @s ct.slimeball += #employeeSlimeball temp
-execute if entity @s[team=team2] as @a[team=team2] if score @s ct.slimeball < #slimeballMax vars run scoreboard players operation @s ct.slimeball += #employeeSlimeball temp
+execute if entity @s[team=team1] as @a[team=team1] if score @s ct.slimeball < slimeballMax vars run scoreboard players operation @s ct.slimeball += #employeeSlimeball temp
+execute if entity @s[team=team2] as @a[team=team2] if score @s ct.slimeball < slimeballMax vars run scoreboard players operation @s ct.slimeball += #employeeSlimeball temp
 
 scoreboard players reset #employeePaper temp
 scoreboard players reset #employeeCoal temp

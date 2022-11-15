@@ -674,7 +674,7 @@
 								"extra": [
 									{
 										"score": {
-											"name": "#spiderEyeMax",
+											"name": "spiderEyeMax",
 											"objective": "vars"
 										},
 										"color": "gold",
@@ -731,7 +731,7 @@
 								"extra": [
 									{
 										"score": {
-											"name": "#spiderEyeMaxTeam1",
+											"name": "spiderEyeMaxTeam1",
 											"objective": "vars"
 										},
 										"color": "gold",
@@ -826,7 +826,7 @@
 								"extra": [
 									{
 										"score": {
-											"name": "#slimeballMax",
+											"name": "slimeballMax",
 											"objective": "vars"
 										},
 										"color": "gold",
@@ -883,7 +883,7 @@
 								"extra": [
 									{
 										"score": {
-											"name": "#slimeballMaxTeam1",
+											"name": "slimeballMaxTeam1",
 											"objective": "vars"
 										},
 										"color": "gold",

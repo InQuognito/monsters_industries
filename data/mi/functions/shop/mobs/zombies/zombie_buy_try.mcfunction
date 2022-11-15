@@ -1,9 +1,11 @@
 function mi:logic/convert_currency_scoreboards
 function mi:logic/currency/reset_temp_prices
 
-scoreboard players operation #paperPrice temp = zombieScaledPaper price
+execute if entity @s[team=team1] run scoreboard players operation #paperPrice temp = zombieScaledPaperTeam1 price
+execute if entity @s[team=team2] run scoreboard players operation #paperPrice temp = zombieScaledPaperTeam2 price
 scoreboard players operation #paperPrice temp *= #mobShopMult temp
-scoreboard players operation #coalPrice temp = zombieScaledCoal price
+execute if entity @s[team=team1] run scoreboard players operation #coalPrice temp = zombieScaledCoalTeam1 price
+execute if entity @s[team=team2] run scoreboard players operation #coalPrice temp = zombieScaledCoalTeam2 price
 scoreboard players operation #coalPrice temp *= #mobShopMult temp
 
 execute unless score #temp ct.paper >= #paperPrice temp run title @s actionbar [{"text":"You don't have enough paper to purchase this many ","color":"red"},{"text":"Zombies","color":"dark_green"},{"text":"!","color":"red"}]

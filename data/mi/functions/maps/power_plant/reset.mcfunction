@@ -24,17 +24,17 @@ execute at @e[tag=location.team2.gunpowder] run setblock 146 19 -100 minecraft:c
 
 # Spider Eye Generators
 clone 124 19 -179 129 20 -174 124 19 -171
-setblock 129 20 -166 minecraft:birch_wall_sign[facing=south]{Color:"black",Text1:'{"text":"Shorten Track"}',Text2:'{"text":"[ 0 / 2 ]"}',Text3:'[{"score":{"name":"#spiderEyeTrack1Paper","objective":"price"}},{"text":" Paper"}]',Text4:'[{"score":{"name":"#spiderEyeTrack1SpiderEye","objective":"price"}},{"text":" Spider Eyes"}]'} destroy
+setblock 129 20 -166 minecraft:birch_wall_sign[facing=south]{Color:"black",Text1:'{"text":"Shorten Track"}',Text2:'{"text":"[ 0 / 2 ]"}',Text3:'[{"score":{"name":"spiderEyeTrack1Paper","objective":"price"}},{"text":" Paper"}]',Text4:'[{"score":{"name":"spiderEyeTrack1SpiderEye","objective":"price"}},{"text":" Spider Eyes"}]'} destroy
 
 clone 151 19 -80 156 20 -75 151 19 -88
-setblock 151 20 -88 minecraft:spruce_wall_sign[facing=north]{Color:"black",Text1:'{"text":"Shorten Track"}',Text2:'{"text":"[ 0 / 2 ]"}',Text3:'[{"score":{"name":"#spiderEyeTrack1Paper","objective":"price"}},{"text":" Paper"}]',Text4:'[{"score":{"name":"#spiderEyeTrack1SpiderEye","objective":"price"}},{"text":" Spider Eyes"}]'} destroy
+setblock 151 20 -88 minecraft:spruce_wall_sign[facing=north]{Color:"black",Text1:'{"text":"Shorten Track"}',Text2:'{"text":"[ 0 / 2 ]"}',Text3:'[{"score":{"name":"spiderEyeTrack1Paper","objective":"price"}},{"text":" Paper"}]',Text4:'[{"score":{"name":"spiderEyeTrack1SpiderEye","objective":"price"}},{"text":" Spider Eyes"}]'} destroy
 
 # Slimeball Generators
 clone 97 13 -176 105 15 -174 97 13 -121
-setblock 97 16 -119 minecraft:oak_wall_sign[facing=south]{Color:"black",Text1:'{"text":"Repair Reactor"}',Text2:'[{"score":{"name":"#slimeballReactorPaper","objective":"price"}},{"text":" Paper"}]',Text3:'[{"score":{"name":"#slimeballReactorSlimeball","objective":"price"}},{"text":" Slimeballs"}]'} destroy
+setblock 97 16 -119 minecraft:oak_wall_sign[facing=south]{Color:"black",Text1:'{"text":"Repair Reactor"}',Text2:'[{"score":{"name":"slimeballReactorPaper","objective":"price"}},{"text":" Paper"}]',Text3:'[{"score":{"name":"slimeballReactorSlimeball","objective":"price"}},{"text":" Slimeballs"}]'} destroy
 
 clone 175 13 -80 183 15 -78 175 13 -132
-setblock 183 16 -132 minecraft:oak_wall_sign[facing=north]{Color:"black",Text1:'{"text":"Repair Reactor"}',Text2:'[{"score":{"name":"#slimeballReactorPaper","objective":"price"}},{"text":" Paper"}]',Text3:'[{"score":{"name":"#slimeballReactorSlimeball","objective":"price"}},{"text":" Slimeballs"}]'} destroy
+setblock 183 16 -132 minecraft:oak_wall_sign[facing=north]{Color:"black",Text1:'{"text":"Repair Reactor"}',Text2:'[{"score":{"name":"slimeballReactorPaper","objective":"price"}},{"text":" Paper"}]',Text3:'[{"score":{"name":"slimeballReactorSlimeball","objective":"price"}},{"text":" Slimeballs"}]'} destroy
 
 # Forge
 fill 75 15 -116 75 13 -120 minecraft:air replace
@@ -272,10 +272,10 @@ setblock 178 21 -84 minecraft:spruce_wall_sign[facing=west]{Color:"black",Text2:
 # Neuron Worms
 setblock 88 15 -104 minecraft:red_concrete replace
 setblock 88 15 -105 minecraft:oak_button[face=wall,facing=north] replace
-setblock 88 16 -105 minecraft:birch_wall_sign[facing=north]{Color:"black",Text2:'{"text":"Neuron Worm"}',Text3:'[{"score":{"name":"#neuronWorm","objective":"price"}},{"text":" Tokens"}]'} destroy
+setblock 88 16 -105 minecraft:birch_wall_sign[facing=north]{Color:"black",Text2:'{"text":"Neuron Worm"}',Text3:'[{"score":{"name":"neuronWorm","objective":"price"}},{"text":" Tokens"}]'} destroy
 
 setblock 192 15 -147 minecraft:red_terracotta replace
 setblock 192 15 -146 minecraft:oak_button[face=wall,facing=south] replace
-setblock 192 16 -146 minecraft:spruce_wall_sign[facing=south]{Color:"black",Text2:'{"text":"Neuron Worm"}',Text3:'[{"score":{"name":"#neuronWorm","objective":"price"}},{"text":" Tokens"}]'} destroy
+setblock 192 16 -146 minecraft:spruce_wall_sign[facing=south]{Color:"black",Text2:'{"text":"Neuron Worm"}',Text3:'[{"score":{"name":"neuronWorm","objective":"price"}},{"text":" Tokens"}]'} destroy
 
 kill @e[type=minecraft:marker,tag=reset.objectMarker]

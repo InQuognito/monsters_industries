@@ -79,41 +79,87 @@ scoreboard players set #lever price 768
 
 # Mobs
 scoreboard players set zombieBasePaper price 8
-scoreboard players operation zombieScaledPaper price = zombieBasePaper price
+scoreboard players operation zombieScaledPaperTeam1 price = zombieBasePaper price
+scoreboard players operation zombieScaledPaperTeam2 price = zombieBasePaper price
 scoreboard players set zombieBaseCoal price 4
-scoreboard players operation zombieScaledCoal price = zombieBaseCoal price
+scoreboard players operation zombieScaledCoalTeam1 price = zombieBaseCoal price
+scoreboard players operation zombieScaledCoalTeam2 price = zombieBaseCoal price
 
-scoreboard players set #huskBasePaper price 12
-scoreboard players set #huskBaseCoal price 6
-scoreboard players set #huskBaseSpiderEye price 1
+scoreboard players set huskBasePaper price 12
+scoreboard players operation huskScaledPaperTeam1 price = huskBasePaper price
+scoreboard players operation huskScaledPaperTeam2 price = huskBasePaper price
+scoreboard players set huskBaseCoal price 6
+scoreboard players operation huskScaledCoalTeam1 price = huskBaseCoal price
+scoreboard players operation huskScaledCoalTeam2 price = huskBaseCoal price
+scoreboard players set huskBaseSpiderEye price 1
+scoreboard players operation huskScaledSpiderEyeTeam1 price = huskBaseSpiderEye price
+scoreboard players operation huskScaledSpiderEyeTeam2 price = huskBaseSpiderEye price
 
-scoreboard players set #skeletonBasePaper price 24
-scoreboard players set #skeletonBaseBone price 6
+scoreboard players set skeletonBasePaper price 24
+scoreboard players operation skeletonScaledPaperTeam1 price = skeletonBasePaper price
+scoreboard players operation skeletonScaledPaperTeam2 price = skeletonBasePaper price
+scoreboard players set skeletonBaseBone price 6
+scoreboard players operation skeletonScaledBoneTeam1 price = skeletonBaseBone price
+scoreboard players operation skeletonScaledBoneTeam2 price = skeletonBaseBone price
 
-scoreboard players set #strayBasePaper price 32
-scoreboard players set #strayBaseBone price 8
-scoreboard players set #strayBaseSpiderEye price 1
+scoreboard players set strayBasePaper price 32
+scoreboard players operation strayScaledPaperTeam1 price = strayBasePaper price
+scoreboard players operation strayScaledPaperTeam2 price = strayBasePaper price
+scoreboard players set strayBaseBone price 8
+scoreboard players operation strayScaledBoneTeam1 price = strayBaseBone price
+scoreboard players operation strayScaledBoneTeam2 price = strayBaseBone price
+scoreboard players set strayBaseSpiderEye price 1
+scoreboard players operation strayScaledSpiderEyeTeam1 price = strayBaseSpiderEye price
+scoreboard players operation strayScaledSpiderEyeTeam2 price = strayBaseSpiderEye price
 
-scoreboard players set #spiderBasePaper price 8
-scoreboard players set #spiderBaseSpiderEye price 4
+scoreboard players set spiderBasePaper price 8
+scoreboard players operation spiderScaledPaperTeam1 price = spiderBasePaper price
+scoreboard players operation spiderScaledPaperTeam2 price = spiderBasePaper price
+scoreboard players set spiderBaseSpiderEye price 4
+scoreboard players operation spiderScaledSpiderEyeTeam1 price = spiderBaseSpiderEye price
+scoreboard players operation spiderScaledSpiderEyeTeam2 price = spiderBaseSpiderEye price
 
-scoreboard players set #caveSpiderBasePaper price 32
-scoreboard players set #caveSpiderBaseSpiderEye price 8
-scoreboard players set #caveSpiderBaseGunpowder price 2
+scoreboard players set caveSpiderBasePaper price 32
+scoreboard players operation caveSpiderScaledPaperTeam1 price = caveSpiderBasePaper price
+scoreboard players operation caveSpiderScaledPaperTeam2 price = caveSpiderBasePaper price
+scoreboard players set caveSpiderBaseSpiderEye price 8
+scoreboard players operation caveSpiderScaledSpiderEyeTeam1 price = caveSpiderBaseSpiderEye price
+scoreboard players operation caveSpiderScaledSpiderEyeTeam2 price = caveSpiderBaseSpiderEye price
+scoreboard players set caveSpiderBaseGunpowder price 2
+scoreboard players operation caveSpiderScaledGunpowderTeam1 price = caveSpiderBaseGunpowder price
+scoreboard players operation caveSpiderScaledGunpowderTeam2 price = caveSpiderBaseGunpowder price
 
-scoreboard players set #creeperBasePaper price 48
-scoreboard players set #creeperBaseGunpowder price 12
+scoreboard players set creeperBasePaper price 48
+scoreboard players operation creeperScaledPaperTeam1 price = creeperBasePaper price
+scoreboard players operation creeperScaledPaperTeam2 price = creeperBasePaper price
+scoreboard players set creeperBaseGunpowder price 12
+scoreboard players operation creeperScaledGunpowderTeam1 price = creeperBaseGunpowder price
+scoreboard players operation creeperScaledGunpowderTeam2 price = creeperBaseGunpowder price
 
-scoreboard players set #slimeBasePaper price 64
-scoreboard players set #slimeBaseSlimeball price 16
+scoreboard players set slimeBasePaper price 64
+scoreboard players operation slimeScaledPaperTeam1 price = slimeBasePaper price
+scoreboard players operation slimeScaledPaperTeam2 price = slimeBasePaper price
+scoreboard players set slimeBaseSlimeball price 16
+scoreboard players operation slimeScaledSlimeballTeam1 price = slimeBaseSlimeball price
+scoreboard players operation slimeScaledSlimeballTeam2 price = slimeBaseSlimeball price
 
-scoreboard players set #phantomBasePaper price 128
-scoreboard players set #phantomBaseSlimeball price 24
-scoreboard players set #phantomBaseGunpowder price 16
+scoreboard players set phantomBasePaper price 128
+scoreboard players operation phantomScaledPaperTeam1 price = phantomBasePaper price
+scoreboard players operation phantomScaledPaperTeam2 price = phantomBasePaper price
+scoreboard players set phantomBaseSlimeball price 24
+scoreboard players operation phantomScaledSlimeballTeam1 price = phantomBaseSlimeball price
+scoreboard players operation phantomScaledSlimeballTeam2 price = phantomBaseSlimeball price
+scoreboard players set phantomBaseGunpowder price 16
+scoreboard players operation phantomScaledGunpowderTeam1 price = phantomBaseGunpowder price
+scoreboard players operation phantomScaledGunpowderTeam2 price = phantomBaseGunpowder price
 
-scoreboard players set #villagerBasePaper price 128
+scoreboard players set villagerBasePaper price 128
+scoreboard players operation villagerScaledPaperTeam1 price = villagerBasePaper price
+scoreboard players operation villagerScaledPaperTeam2 price = villagerBasePaper price
 
-scoreboard players set #neuronWormBaseToken price 2
+scoreboard players set neuronWormBaseToken price 2
+scoreboard players operation neuronWormScaledTokenTeam1 price = neuronWormBaseToken price
+scoreboard players operation neuronWormScaledTokenTeam2 price = neuronWormBaseToken price
 
 scoreboard players set deflation vars 1
 
@@ -131,12 +177,12 @@ scoreboard players set #forgeIntervalTokens price 1
 scoreboard players set #forgeIntervalNetherite price 8
 
 # Generators
-scoreboard players set #slimeballReactorPaper price 256
-scoreboard players set #slimeballReactorSlimeball price 32
-scoreboard players set #spiderEyeTrack1Paper price 256
-scoreboard players set #spiderEyeTrack1SpiderEye price 16
-scoreboard players set #spiderEyeTrack2Paper price 512
-scoreboard players set #spiderEyeTrack2SpiderEye price 32
+scoreboard players set slimeballReactorPaper price 256
+scoreboard players set slimeballReactorSlimeball price 32
+scoreboard players set spiderEyeTrack1Paper price 256
+scoreboard players set spiderEyeTrack1SpiderEye price 16
+scoreboard players set spiderEyeTrack2Paper price 512
+scoreboard players set spiderEyeTrack2SpiderEye price 32
 
 # Kill/Death Stock Values
 execute if score $difficulty mode matches 0 run scoreboard players set #deathPercent vars 40
@@ -160,7 +206,7 @@ scoreboard players set #enchanting price 1
 scoreboard players set #enchantmentLuckPaper price 896
 scoreboard players set #enchantmentLuckNetherite price 48
 scoreboard players set #leverCps vars 5
-scoreboard players set #neuronWorm price 4
+scoreboard players set neuronWorm price 4
 scoreboard players set #randomRecipe price 96
 scoreboard players set #replaceMerchant price 256
 scoreboard players set #sentry price 2
@@ -187,16 +233,16 @@ scoreboard players operation #gunpowderMaxTeam1 vars = #gunpowderMax vars
 scoreboard players operation #gunpowderMaxTeam1 vars *= #team1Amount temp
 scoreboard players operation #gunpowderMaxTeam2 vars = #gunpowderMax vars
 scoreboard players operation #gunpowderMaxTeam2 vars *= #team2Amount temp
-scoreboard players set #spiderEyeMax vars 100
-scoreboard players operation #spiderEyeMaxTeam1 vars = #spiderEyeMax vars
-scoreboard players operation #spiderEyeMaxTeam1 vars *= #team1Amount temp
-scoreboard players operation #spiderEyeMaxTeam2 vars = #spiderEyeMax vars
-scoreboard players operation #spiderEyeMaxTeam2 vars *= #team2Amount temp
-scoreboard players set #slimeballMax vars 100
-scoreboard players operation #slimeballMaxTeam1 vars = #slimeballMax vars
-scoreboard players operation #slimeballMaxTeam1 vars *= #team1Amount temp
-scoreboard players operation #slimeballMaxTeam2 vars = #slimeballMax vars
-scoreboard players operation #slimeballMaxTeam2 vars *= #team2Amount temp
+scoreboard players set spiderEyeMax vars 100
+scoreboard players operation spiderEyeMaxTeam1 vars = spiderEyeMax vars
+scoreboard players operation spiderEyeMaxTeam1 vars *= #team1Amount temp
+scoreboard players operation spiderEyeMaxTeam2 vars = spiderEyeMax vars
+scoreboard players operation spiderEyeMaxTeam2 vars *= #team2Amount temp
+scoreboard players set slimeballMax vars 100
+scoreboard players operation slimeballMaxTeam1 vars = slimeballMax vars
+scoreboard players operation slimeballMaxTeam1 vars *= #team1Amount temp
+scoreboard players operation slimeballMaxTeam2 vars = slimeballMax vars
+scoreboard players operation slimeballMaxTeam2 vars *= #team2Amount temp
 scoreboard players set #netheriteMax vars 50
 scoreboard players operation #netheriteMaxTeam1 vars = #netheriteMax vars
 scoreboard players operation #netheriteMaxTeam1 vars *= #team1Amount temp

@@ -1,5 +1,7 @@
-scoreboard players operation zombie1Paper price = zombieScaledPaper price
-scoreboard players operation zombie1Coal price = zombieScaledCoal price
+execute if entity @s[team=team1] run scoreboard players operation zombie1Paper price = zombieScaledPaperTeam1 price
+execute if entity @s[team=team2] run scoreboard players operation zombie1Paper price = zombieScaledPaperTeam2 price
+execute if entity @s[team=team1] run scoreboard players operation zombie1Coal price = zombieScaledCoalTeam1 price
+execute if entity @s[team=team2] run scoreboard players operation zombie1Coal price = zombieScaledCoalTeam2 price
 
 scoreboard players operation zombie4Paper price = zombie1Paper price
 scoreboard players operation zombie4Coal price = zombie1Coal price
