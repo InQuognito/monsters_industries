@@ -1,0 +1,25 @@
+{
+	"display": {
+		"title": {
+			"text": "Industrial Age",
+			"color": "yellow"
+		},
+		"description": {
+			"text": "Restart the old forge.",
+			"color": "white"
+		},
+		"icon": {
+			"item": "minecraft:blast_furnace"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": true
+	},
+	"criteria": {
+		"impossible": {
+			"trigger": "minecraft:impossible"
+		}
+	},
+	"parent": "mi:root"
+}

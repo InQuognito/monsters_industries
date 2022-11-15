@@ -1,0 +1,125 @@
+{
+	"pools": [
+		{
+			"rolls": {
+				"type": "minecraft:score",
+				"target": {
+					"type": "minecraft:fixed",
+					"name": "#mobShopMult"
+				},
+				"score": "temp"
+			},
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:endermite_spawn_egg",
+					"functions": [
+						{
+							"function": "minecraft:set_name",
+							"entity": "this",
+							"name": {
+								"text": "Neuron Worm",
+								"color": "aqua",
+								"bold": false,
+								"italic": false
+							},
+							"conditions": [
+								{
+									"condition": "minecraft:entity_properties",
+									"entity": "this",
+									"predicate": {
+										"team": "team1"
+									}
+								}
+							]
+						},
+						{
+							"function": "minecraft:set_name",
+							"entity": "this",
+							"name": {
+								"text": "Neuron Worm",
+								"color": "red",
+								"bold": false,
+								"italic": false
+							},
+							"conditions": [
+								{
+									"condition": "minecraft:entity_properties",
+									"entity": "this",
+									"predicate": {
+										"team": "team2"
+									}
+								}
+							]
+						},
+						{
+							"function": "minecraft:set_lore",
+							"entity": "this",
+							"lore": [
+								{
+									"text": "-=- Fusion Ingredient -=-",
+									"color": "yellow",
+									"bold": false,
+									"italic": false
+								},
+								{
+									"text": "[?] ",
+									"color": "gold",
+									"bold": true,
+									"italic": false,
+									"extra": [
+										[
+											{
+												"text": "Can be fused with Villagers to",
+												"color": "gold",
+												"bold": false,
+												"italic": false
+											}
+										]
+									]
+								},
+								{
+									"text": "make higher-tier Employees.",
+									"color": "gold",
+									"bold": false,
+									"italic": false
+								}
+							],
+							"replace": true
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{neuronWorm:1,EntityTag:{id:\"minecraft:endermite\",Invulnerable:1b,PersistenceRequired:1b,DeathLootTable:\"mi:entity_drops/empty\"},CanPlaceOn:[\"lapis_block\"]}"
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{EntityTag:{Team:team1}}",
+							"conditions": [
+								{
+									"condition": "minecraft:entity_properties",
+									"entity": "this",
+									"predicate": {
+										"team": "team1"
+									}
+								}
+							]
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{EntityTag:{Team:team2}}",
+							"conditions": [
+								{
+									"condition": "minecraft:entity_properties",
+									"entity": "this",
+									"predicate": {
+										"team": "team2"
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

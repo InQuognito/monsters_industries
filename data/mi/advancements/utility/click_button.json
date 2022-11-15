@@ -1,0 +1,18 @@
+{
+	"criteria": {
+		"click_button": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"player": {},
+				"location": {
+					"block": {
+						"tag": "minecraft:buttons"
+					}
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "mi:logic/inputs/check"
+	}
+}

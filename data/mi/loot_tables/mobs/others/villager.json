@@ -1,0 +1,155 @@
+{
+	"pools": [
+		{
+			"rolls": {
+				"type": "minecraft:score",
+				"target": {
+					"type": "minecraft:fixed",
+					"name": "#mobShopMult"
+				},
+				"score": "temp"
+			},
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:villager_spawn_egg",
+					"functions": [
+						{
+							"function": "minecraft:set_name",
+							"entity": "this",
+							"name": {
+								"text": "Villager",
+								"color": "aqua",
+								"bold": false,
+								"italic": false
+							},
+							"conditions": [
+								{
+									"condition": "minecraft:entity_properties",
+									"entity": "this",
+									"predicate": {
+										"team": "team1"
+									}
+								}
+							]
+						},
+						{
+							"function": "minecraft:set_name",
+							"entity": "this",
+							"name": {
+								"text": "Villager",
+								"color": "red",
+								"bold": false,
+								"italic": false
+							},
+							"conditions": [
+								{
+									"condition": "minecraft:entity_properties",
+									"entity": "this",
+									"predicate": {
+										"team": "team2"
+									}
+								}
+							]
+						},
+						{
+							"function": "minecraft:set_lore",
+							"entity": "this",
+							"lore": [
+								{
+									"text": "-=- Fusion Ingredient -=-",
+									"color": "yellow",
+									"bold": false,
+									"italic": false
+								},
+								{
+									"text": "[?] ",
+									"color": "gold",
+									"bold": true,
+									"italic": false,
+									"extra": [
+										[
+											{
+												"text": "Can be placed as a low-level",
+												"color": "gold",
+												"bold": false,
+												"italic": false
+											}
+										]
+									]
+								},
+								{
+									"text": "Employee. These Trainees can only",
+									"color": "gold",
+									"bold": false,
+									"italic": false
+								},
+								{
+									"text": "generate paper, and do so at a",
+									"color": "gold",
+									"bold": false,
+									"italic": false
+								},
+								{
+									"text": "slower rate.",
+									"color": "gold",
+									"bold": false,
+									"italic": false
+								},
+								{
+									"text": "[!] ",
+									"color": "red",
+									"bold": true,
+									"italic": false
+								},
+								{
+									"text": "Trainees cannot be upgraded",
+									"color": "red",
+									"bold": false,
+									"italic": false
+								},
+								{
+									"text": "once placed!",
+									"color": "red",
+									"bold": false,
+									"italic": false
+								}
+							],
+							"replace": true
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{villager:1,EntityTag:{id:\"minecraft:villager\",PersistenceRequired:1b,DeathLootTable:\"mi:entity_drops/empty\"},CanPlaceOn:[\"lapis_block\",\"cauldron\"]}"
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{EntityTag:{Team:team1}}",
+							"conditions": [
+								{
+									"condition": "minecraft:entity_properties",
+									"entity": "this",
+									"predicate": {
+										"team": "team1"
+									}
+								}
+							]
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{EntityTag:{Team:team2}}",
+							"conditions": [
+								{
+									"condition": "minecraft:entity_properties",
+									"entity": "this",
+									"predicate": {
+										"team": "team2"
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
