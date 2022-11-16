@@ -15,3 +15,4 @@ scoreboard players reset #clearGunpowder temp
 scoreboard players reset #clearSlimeball temp
 scoreboard players reset #clearNetherite temp
 scoreboard players reset #clearMonsterToken temp
+scoreboard players reset #clearSabotageToken temp
