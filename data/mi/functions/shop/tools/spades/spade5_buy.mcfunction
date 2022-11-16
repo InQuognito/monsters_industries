@@ -7,4 +7,4 @@ scoreboard players operation #clearPaper temp = #spade5Paper price
 scoreboard players operation #clearNetherite temp = #spade5Netherite price
 function mi:logic/currency/apply_price
 
-clear @s #mi:spades
+clear @s #mi:shovels
