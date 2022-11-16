@@ -100,13 +100,17 @@
 									"text": "[!] ",
 									"color": "red",
 									"bold": true,
-									"italic": false
-								},
-								{
-									"text": "Trainees cannot be upgraded",
-									"color": "red",
-									"bold": false,
-									"italic": false
+									"italic": false,
+									"extra": [
+										[
+											{
+												"text": "Trainees cannot be upgraded",
+												"color": "red",
+												"bold": false,
+												"italic": false
+											}
+										]
+									]
 								},
 								{
 									"text": "once placed!",
