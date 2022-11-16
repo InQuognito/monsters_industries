@@ -17,3 +17,9 @@ execute if score #bankAccount temp matches 0 at @s run playsound minecraft:entit
 execute if score #bankAccount temp matches 1 if score @s ct.slimeball < slimeballMax vars at @s run playsound minecraft:entity.item.pickup block @s
 execute if score #bankAccount temp matches 2 if score #temp ct.slimeball < slimeballMaxScaled vars at @s run playsound minecraft:entity.item.pickup block @s
 execute if score #bankAccount temp matches 3 at @s run playsound minecraft:entity.item.pickup block @s
+
+execute if predicate mi:chance_0_5 run tag @s[tag=!slimeballFortune] add getSlimeballFortune
+tellraw @s[tag=getSlimeballFortune] {"text":"You feel the luck empower you and double your slimeball output!","color":"green"}
+scoreboard players operation @s[tag=getSlimeballFortune] production.slimeball *= 2 integers
+tag @s[tag=getSlimeballFortune] add slimeballFortune
+tag @s remove getSlimeballFortune
