@@ -5,7 +5,7 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:emerald",
+					"name": "minecraft:gold_ingot",
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",

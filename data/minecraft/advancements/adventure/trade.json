@@ -2,7 +2,7 @@
 	"parent": "minecraft:adventure/root",
 	"display": {
 		"icon": {
-		"item": "minecraft:emerald"
+		"item": "minecraft:gold_ingot"
 		},
 		"title": {
 		"translate": "advancements.adventure.trade.title"

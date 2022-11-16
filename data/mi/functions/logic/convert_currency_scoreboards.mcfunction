@@ -12,7 +12,7 @@ execute if score #team1BankAccount temp matches 0 if entity @s[team=team1] store
 execute if score #team2BankAccount temp matches 0 if entity @s[team=team2] store result score #team2 ct.slimeball run clear @s minecraft:slime_ball{new:1} 0
 execute if score #team1BankAccount temp matches 0 if entity @s[team=team1] store result score #team1 ct.netherite run clear @s minecraft:netherite_ingot{new:1} 0
 execute if score #team2BankAccount temp matches 0 if entity @s[team=team2] store result score #team2 ct.netherite run clear @s minecraft:netherite_ingot{new:1} 0
-execute store result score #tokenCount temp run clear @s minecraft:emerald 0
+execute store result score #tokenCount temp run clear @s minecraft:gold_ingot 0
 
 execute if score #team1BankAccount temp matches 1 if entity @s[team=team1] run scoreboard players operation #team1 ct.paper = @s ct.paper
 execute if score #team2BankAccount temp matches 1 if entity @s[team=team2] run scoreboard players operation #team2 ct.paper = @s ct.paper
