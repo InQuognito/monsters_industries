@@ -73,7 +73,6 @@ scoreboard players set #pickaxe2Coal price 32
 scoreboard players set #pickaxe3Paper price 96
 scoreboard players set #pickaxe3Coal price 64
 scoreboard players set #pickaxe4Paper price 160
-scoreboard players set #pickaxe4Coal price 128
 scoreboard players set #pickaxe4Token price 2
 scoreboard players set #pickaxe5Paper price 1024
 scoreboard players set #pickaxe5Netherite price 64
