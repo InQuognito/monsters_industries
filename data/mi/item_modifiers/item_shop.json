@@ -1,0 +1,40 @@
+[
+	{
+		"function": "minecraft:set_name",
+		"entity": "this",
+		"name": {
+			"text": "Item Shop",
+			"color": "aqua",
+			"bold": false,
+			"italic": false
+		},
+		"conditions": [
+			{
+				"condition": "minecraft:entity_properties",
+				"entity": "this",
+				"predicate": {
+					"team": "team1"
+				}
+			}
+		]
+	},
+	{
+		"function": "minecraft:set_name",
+		"entity": "this",
+		"name": {
+			"text": "Item Shop",
+			"color": "red",
+			"bold": false,
+			"italic": false
+		},
+		"conditions": [
+			{
+				"condition": "minecraft:entity_properties",
+				"entity": "this",
+				"predicate": {
+					"team": "team2"
+				}
+			}
+		]
+	}
+]

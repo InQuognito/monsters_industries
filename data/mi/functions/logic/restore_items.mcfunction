@@ -6,4 +6,4 @@ execute if score #team2BankAccount temp matches 1.. if entity @s[team=team2] run
 
 function mi:logic/restore_armor
 
-function mi:logic/book
+function mi:logic/item_shop
