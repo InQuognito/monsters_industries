@@ -8,9 +8,9 @@ execute if entity @s[team=team2] run scoreboard players operation phantom1Gunpow
 scoreboard players operation phantom4Paper price = phantom1Paper price
 scoreboard players operation phantom4Slimeball price = phantom1Slimeball price
 scoreboard players operation phantom4Gunpowder price = phantom1Gunpowder price
-scoreboard players operation phantom4Paper price *= #4 integers
-scoreboard players operation phantom4Slimeball price *= #4 integers
-scoreboard players operation phantom4Gunpowder price *= #4 integers
+scoreboard players operation phantom4Paper price *= 4 integers
+scoreboard players operation phantom4Slimeball price *= 4 integers
+scoreboard players operation phantom4Gunpowder price *= 4 integers
 
 scoreboard players operation phantom8Paper price = phantom4Paper price
 scoreboard players operation phantom8Slimeball price = phantom4Slimeball price

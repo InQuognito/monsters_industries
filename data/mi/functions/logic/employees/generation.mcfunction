@@ -5,7 +5,7 @@ execute store result score #team1HighTier employees run execute if entity @e[typ
 
 execute if score #team1EmployeeResource temp matches 1 run scoreboard players operation #team1LowTier temp = #team1LowTier employees
 execute if score #team1EmployeeResource temp matches 1 run scoreboard players operation #team1LowTier temp *= #employeeGenerationAmount vars
-execute if score #team1EmployeeResource temp matches 1 run scoreboard players operation #team1LowTier temp /= #4 integers
+execute if score #team1EmployeeResource temp matches 1 run scoreboard players operation #team1LowTier temp /= 4 integers
 scoreboard players operation #team1HighTier temp = #team1HighTier employees
 scoreboard players operation #team1HighTier temp *= #employeeGenerationAmount vars
 execute if score #team1EmployeeResource temp matches 2.. run scoreboard players operation #team1HighTier temp /= #8 integers
@@ -42,7 +42,7 @@ execute store result score #team2HighTier employees run execute if entity @e[typ
 
 execute if score #team2EmployeeResource temp matches 1 run scoreboard players operation #team2LowTier temp = #team2LowTier employees
 execute if score #team2EmployeeResource temp matches 1 run scoreboard players operation #team2LowTier temp *= #employeeGenerationAmount vars
-execute if score #team2EmployeeResource temp matches 1 run scoreboard players operation #team2LowTier temp /= #4 integers
+execute if score #team2EmployeeResource temp matches 1 run scoreboard players operation #team2LowTier temp /= 4 integers
 scoreboard players operation #team2HighTier temp = #team2HighTier employees
 scoreboard players operation #team2HighTier temp *= #employeeGenerationAmount vars
 execute if score #team2EmployeeResource temp matches 2.. run scoreboard players operation #team2HighTier temp /= #8 integers

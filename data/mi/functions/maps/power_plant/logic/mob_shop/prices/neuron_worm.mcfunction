@@ -2,7 +2,7 @@ execute if entity @s[team=team1] run scoreboard players operation neuronWorm1Tok
 execute if entity @s[team=team2] run scoreboard players operation neuronWorm1Token price = neuronWormScaledTokenTeam2 price
 
 scoreboard players operation neuronWorm4Token price = neuronWorm1Token price
-scoreboard players operation neuronWorm4Token price *= #4 integers
+scoreboard players operation neuronWorm4Token price *= 4 integers
 
 scoreboard players operation neuronWorm8Token price = neuronWorm4Token price
 scoreboard players operation neuronWorm8Token price *= #2 integers

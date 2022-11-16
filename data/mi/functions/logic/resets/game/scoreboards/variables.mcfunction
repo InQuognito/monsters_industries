@@ -18,12 +18,40 @@ scoreboard players set #dragonsBreath price 512
 
 # Ammo
 scoreboard players set #arrow price 8
-scoreboard players set #fireworkPaper price 24
-scoreboard players set #fireworkGunpowder price 4
+scoreboard players operation #arrow16 price = #arrow price
+scoreboard players operation #arrow16 price *= 16 integers
+scoreboard players operation #arrow64 price = #arrow16 price
+scoreboard players operation #arrow64 price *= 4 integers
+scoreboard players set #rocketPaper price 24
+scoreboard players operation #rocket4Paper price = #rocketPaper price
+scoreboard players operation #rocket4Paper price *= 4 integers
+scoreboard players operation #rocket16Paper price = #rocket4Paper price
+scoreboard players operation #rocket16Paper price *= 4 integers
+scoreboard players set #rocketGunpowder price 4
+scoreboard players operation #rocket4Gunpowder price = #rocketGunpowder price
+scoreboard players operation #rocket4Gunpowder price *= 4 integers
+scoreboard players operation #rocket16Gunpowder price = #rocket4Gunpowder price
+scoreboard players operation #rocket16Gunpowder price *= 4 integers
 scoreboard players set #bayonetPaper price 48
+scoreboard players operation #bayonet4Paper price = #bayonetPaper price
+scoreboard players operation #bayonet4Paper price *= 4 integers
+scoreboard players operation #bayonet16Paper price = #bayonet4Paper price
+scoreboard players operation #bayonet16Paper price *= 4 integers
 scoreboard players set #bayonetGunpowder price 8
+scoreboard players operation #bayonet4Gunpowder price = #bayonetGunpowder price
+scoreboard players operation #bayonet4Gunpowder price *= 4 integers
+scoreboard players operation #bayonet16Gunpowder price = #bayonet4Gunpowder price
+scoreboard players operation #bayonet16Gunpowder price *= 4 integers
 scoreboard players set #sniperPaper price 64
+scoreboard players operation #sniper4Paper price = #sniperPaper price
+scoreboard players operation #sniper4Paper price *= 4 integers
+scoreboard players operation #sniper16Paper price = #sniper4Paper price
+scoreboard players operation #sniper16Paper price *= 4 integers
 scoreboard players set #sniperGunpowder price 8
+scoreboard players operation #sniper4Gunpowder price = #sniperGunpowder price
+scoreboard players operation #sniper4Gunpowder price *= 4 integers
+scoreboard players operation #sniper16Gunpowder price = #sniper4Gunpowder price
+scoreboard players operation #sniper16Gunpowder price *= 4 integers
 
 # Armor
 scoreboard players set #armor1 price 32

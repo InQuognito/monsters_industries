@@ -5,8 +5,8 @@ execute if entity @s[team=team2] run scoreboard players operation zombie1Coal pr
 
 scoreboard players operation zombie4Paper price = zombie1Paper price
 scoreboard players operation zombie4Coal price = zombie1Coal price
-scoreboard players operation zombie4Paper price *= #4 integers
-scoreboard players operation zombie4Coal price *= #4 integers
+scoreboard players operation zombie4Paper price *= 4 integers
+scoreboard players operation zombie4Coal price *= 4 integers
 
 scoreboard players operation zombie8Paper price = zombie4Paper price
 scoreboard players operation zombie8Coal price = zombie4Coal price

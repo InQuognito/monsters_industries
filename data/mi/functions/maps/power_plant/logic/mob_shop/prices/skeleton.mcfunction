@@ -5,8 +5,8 @@ execute if entity @s[team=team2] run scoreboard players operation skeleton1Bone 
 
 scoreboard players operation skeleton4Paper price = skeleton1Paper price
 scoreboard players operation skeleton4Bone price = skeleton1Bone price
-scoreboard players operation skeleton4Paper price *= #4 integers
-scoreboard players operation skeleton4Bone price *= #4 integers
+scoreboard players operation skeleton4Paper price *= 4 integers
+scoreboard players operation skeleton4Bone price *= 4 integers
 
 scoreboard players operation skeleton8Paper price = skeleton4Paper price
 scoreboard players operation skeleton8Bone price = skeleton4Bone price

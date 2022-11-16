@@ -8,7 +8,7 @@ execute as @e[type=minecraft:skeleton,tag=necroMinion] run function mi:logic/tic
 function mi:logic/tick/resources
 function mi:logic/tick/respawn
 function mi:logic/tick/sabotages
-function mi:logic/tick/shop
+execute as @a[team=!spectators] run function mi:logic/tick/shop
 execute as @e[type=minecraft:slime,tag=!hasLootTable] run function mi:logic/tick/slimes
 function mi:logic/tick/stock
 function mi:logic/tick/vex
