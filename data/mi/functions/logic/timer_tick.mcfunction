@@ -5,7 +5,7 @@ execute if score $gameStage temp matches 1 if score $countdown timer matches 1..
 execute if score $gameStage temp matches 2.. run scoreboard players add $timer.Seconds timer 1
 
 execute if score $gameStage temp matches 2.. unless score $rushMode mode matches 1 run scoreboard players operation #inflationTimer temp = $timer.Seconds timer
-execute if score $gameStage temp matches 2.. unless score $rushMode mode matches 1 run scoreboard players operation #inflationTimer temp %= #30 integers
+execute if score $gameStage temp matches 2.. unless score $rushMode mode matches 1 run scoreboard players operation #inflationTimer temp %= 20 integers
 execute if score $gameStage temp matches 2.. unless score $rushMode mode matches 1 if score #inflationTimer temp matches 0 run function mi:logic/decrease_inflation
 
 execute if score $gameStage temp matches 2.. as @a[team=!spectators,nbt={Inventory:[{id:"minecraft:written_book",tag:{itemShop:1}}]}] run scoreboard players set @s timer.itemShop 0
