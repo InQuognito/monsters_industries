@@ -1,8 +1,11 @@
 {
 	"values": [
+		"#minecraft:banners",
 		"minecraft:bucket",
+		"minecraft:iron_ingot",
 		"minecraft:glass_bottle",
 		"minecraft:nether_star",
+		"minecraft:poppy",
 		"minecraft:wither_rose"
 	]
 }
