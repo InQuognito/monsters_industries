@@ -1,0 +1,39 @@
+{
+	"type": "minecraft:command",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:diamond",
+					"functions": [
+						{
+							"function": "minecraft:set_name",
+							"entity": "this",
+							"name": {
+								"text": "Sabotage Token",
+								"color": "aqua",
+								"bold": false,
+								"italic": false
+							}
+						},
+						{
+							"function": "minecraft:set_lore",
+							"entity": "this",
+							"lore": [
+								{
+									"text": "-=- Sabotage Currency -=-",
+									"color": "yellow",
+									"bold": false,
+									"italic": false
+								}
+							],
+							"replace": true
+						}
+					]
+				}
+			]
+		}
+	]
+}

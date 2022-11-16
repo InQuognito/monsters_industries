@@ -1,4 +1,5 @@
 {
+	"type": "minecraft:command",
 	"pools": [
 		{
 			"rolls": 1,
