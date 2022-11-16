@@ -221,6 +221,10 @@ scoreboard players set #killPercent vars 10
 scoreboard players operation #kill vars = $stockLimit stock
 scoreboard players operation #kill vars /= #killPercent vars
 
+scoreboard players set #sabotageTokensPerKill vars 4
+execute if score $stockLimit stock matches ..500 run scoreboard players operation #sabotageTokensPerKill price /= 2 integers
+execute if score $stockLimit stock matches ..250 run scoreboard players operation #sabotageTokensPerKill price /= 2 integers
+
 # Tokens
 scoreboard players set #monsterTokenPaper price 64
 scoreboard players set #monsterTokenCoal price 64
@@ -278,34 +282,34 @@ scoreboard players operation #netheriteMaxTeam2 vars = #netheriteMax vars
 scoreboard players operation #netheriteMaxTeam2 vars *= #team2Amount temp
 
 # Sabotages
-scoreboard players set #factoryShutdown price 150
+scoreboard players set #factoryShutdown price 6
 execute if score $stockLimit stock matches ..500 run scoreboard players operation #factoryShutdown price /= 2 integers
 execute if score $stockLimit stock matches ..250 run scoreboard players operation #factoryShutdown price /= 2 integers
-scoreboard players set #securityBreach price 150
+scoreboard players set #securityBreach price 6
 execute if score $stockLimit stock matches ..500 run scoreboard players operation #securityBreach price /= 2 integers
 execute if score $stockLimit stock matches ..250 run scoreboard players operation #securityBreach price /= 2 integers
-scoreboard players set #plague price 200
+scoreboard players set #plague price 8
 execute if score $stockLimit stock matches ..500 run scoreboard players operation #plague price /= 2 integers
 execute if score $stockLimit stock matches ..250 run scoreboard players operation #plague price /= 2 integers
-scoreboard players set #summonWither price 250
+scoreboard players set #summonWither price 10
 execute if score $stockLimit stock matches ..500 run scoreboard players operation #summonWither price /= 2 integers
 execute if score $stockLimit stock matches ..250 run scoreboard players operation #summonWither price /= 2 integers
-scoreboard players set #nuke price 300
+scoreboard players set #nuke price 12
 execute if score $stockLimit stock matches ..500 run scoreboard players operation #nuke price /= 2 integers
 execute if score $stockLimit stock matches ..250 run scoreboard players operation #nuke price /= 2 integers
-scoreboard players set #cloakingField price 75
+scoreboard players set #cloakingField price 3
 execute if score $stockLimit stock matches ..500 run scoreboard players operation #cloakingField price /= 2 integers
 execute if score $stockLimit stock matches ..250 run scoreboard players operation #cloakingField price /= 2 integers
-scoreboard players set #bulwark price 75
+scoreboard players set #bulwark price 3
 execute if score $stockLimit stock matches ..500 run scoreboard players operation #bulwark price /= 2 integers
 execute if score $stockLimit stock matches ..250 run scoreboard players operation #bulwark price /= 2 integers
-scoreboard players set #daylightSavings price 100
+scoreboard players set #daylightSavings price 4
 execute if score $stockLimit stock matches ..500 run scoreboard players operation #daylightSavings price /= 2 integers
 execute if score $stockLimit stock matches ..250 run scoreboard players operation #daylightSavings price /= 2 integers
-scoreboard players set #directExposure price 100
+scoreboard players set #directExposure price 4
 execute if score $stockLimit stock matches ..500 run scoreboard players operation #directExposure price /= 2 integers
 execute if score $stockLimit stock matches ..250 run scoreboard players operation #directExposure price /= 2 integers
-scoreboard players set #directDeposit price 100
+scoreboard players set #directDeposit price 4
 execute if score $stockLimit stock matches ..500 run scoreboard players operation #directDeposit price /= 2 integers
 execute if score $stockLimit stock matches ..250 run scoreboard players operation #directDeposit price /= 2 integers
 
