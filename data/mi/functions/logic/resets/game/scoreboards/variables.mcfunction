@@ -72,10 +72,10 @@ scoreboard players set #lighter4Paper price 160
 scoreboard players set #lighter4Gunpowder price 128
 
 # Upgrades
-scoreboard players set #paperProduction1 price 64
-scoreboard players set #paperProduction2 price 128
-scoreboard players set #paperProduction3 price 256
-scoreboard players set #lever price 768
+scoreboard players set #paperProduction1 price 32
+scoreboard players set #paperProduction2 price 64
+scoreboard players set #paperProduction3 price 128
+scoreboard players set #lever price 384
 
 # Mobs
 scoreboard players set zombieBasePaper price 8

@@ -5,7 +5,7 @@ scoreboard players reset spiderEyePrice temp
 scoreboard players reset gunpowderPrice temp
 scoreboard players reset slimeballPrice temp
 scoreboard players reset #netheritePrice temp
-scoreboard players reset #tokenPrice temp
+scoreboard players reset tokenPrice temp
 
 scoreboard players reset #clearPaper temp
 scoreboard players reset #clearCoal temp
