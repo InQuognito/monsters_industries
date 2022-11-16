@@ -2,7 +2,7 @@ clear @s #mi:pants_and_boots
 
 scoreboard players set @s armorLevel 1
 
-function mi:logic/replace_armor
+function mi:logic/restore_armor
 
 title @s actionbar [{"text":"You have purchased ","color":"green"},{"text":"Golden Armor","color":"gold"},{"text":"!","color":"green"}]
 
