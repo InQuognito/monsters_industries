@@ -1,5 +1,5 @@
 scoreboard players set #team2 forge 1
-function mi:logic/forge/summon_resource
+function mi:logic/forge/summon_resource_team2
 
 setblock 204 14 -133 minecraft:furnace[facing=west,lit=true]{Lock:"ae88"} destroy
 setblock 201 15 -130 minecraft:piston[facing=down] replace
@@ -19,3 +19,5 @@ fill 201 14 -129 201 15 -129 minecraft:air destroy
 
 scoreboard players operation #clearPaper temp = #forgeStart price
 function mi:logic/currency/apply_price
+
+advancement grant @a[team=team2] only mi:start_forge
