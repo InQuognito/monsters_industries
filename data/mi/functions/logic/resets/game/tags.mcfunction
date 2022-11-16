@@ -1,4 +1,4 @@
-tag @s remove fortune.bone
-tag @s remove fortune.coal
-tag @s remove fortune.gunpowder
+tag @s remove boneFortune
+tag @s remove coalFortune
+tag @s remove gunpowderFortune
 tag @s remove self

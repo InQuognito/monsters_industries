@@ -80,7 +80,7 @@ scoreboard players set $100 healthPer 100
 
 # Math
 scoreboard players set #-1 integers -1
-scoreboard players set #2 integers 2
+scoreboard players set 2 integers 2
 scoreboard players set #3 integers 3
 scoreboard players set 4 integers 4
 scoreboard players set #5 integers 5

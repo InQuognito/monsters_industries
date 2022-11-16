@@ -15,9 +15,10 @@ execute if score #bankAccount temp matches 1 if score @s ct.gunpowder < #gunpowd
 execute if score #bankAccount temp matches 2 if score #temp ct.gunpowder < #gunpowderMaxScaled vars at @s run playsound minecraft:entity.item.pickup block @s
 execute if score #bankAccount temp matches 3 at @s run playsound minecraft:entity.item.pickup block @s
 
-execute if predicate mi:chance_0_5 run tag @s[scores={production.gunpowder=1}] add getGunpowderFortune
+execute if predicate mi:chance_0_5 run tag @s[tag=!gunpowderFortune] add getGunpowderFortune
 tellraw @s[tag=getGunpowderFortune] {"text":"You feel the luck empower you and double your gunpowder output!","color":"green"}
 scoreboard players set @s[tag=getGunpowderFortune] production.gunpowder 2
+tag @s[tag=getGunpowderFortune] add gunpowderFortune
 tag @s remove getGunpowderFortune
 
 function mi:logic/resources/extinguish_gunpowder_fire

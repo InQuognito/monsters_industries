@@ -1,4 +1,5 @@
 scoreboard players set @s pickaxeLevel 6
+scoreboard players operation @s production.coal *= 2 integers
 
 title @s actionbar [{"text":"You have purchased a ","color":"green"},{"text":"Dwarven Pickaxe","color":"dark_gray"},{"text":"!","color":"green"}]
 

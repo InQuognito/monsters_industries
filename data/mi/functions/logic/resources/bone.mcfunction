@@ -14,9 +14,10 @@ execute if score #bankAccount temp matches 1 if score @s ct.bone < #boneMax vars
 execute if score #bankAccount temp matches 2 if score #temp ct.bone < #boneMaxScaled vars at @s run playsound minecraft:entity.item.pickup block @s
 execute if score #bankAccount temp matches 3 at @s run playsound minecraft:entity.item.pickup block @s
 
-execute if predicate mi:chance_0_5 run tag @s[scores={production.bone=1}] add getBoneFortune
+execute if predicate mi:chance_0_5 run tag @s[tag=!boneFortune] add getBoneFortune
 tellraw @s[tag=getBoneFortune] {"text":"You feel the luck empower you and double your bone output!","color":"green"}
-scoreboard players set @s[tag=getBoneFortune] production.bone 2
+scoreboard players operation @s[tag=getBoneFortune] production.bone *= 2 integers
+tag @s[tag=getBoneFortune] add boneFortune
 tag @s remove getBoneFortune
 
 execute unless score #team1FactoryShutdown temp matches 1 at @e[type=minecraft:marker,tag=location.team1.bone] run setblock ~ ~ ~ minecraft:podzol keep

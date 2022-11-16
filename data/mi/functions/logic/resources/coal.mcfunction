@@ -15,9 +15,10 @@ execute if score #bankAccount temp matches 1 if score @s ct.coal < #coalMax vars
 execute if score #bankAccount temp matches 2 if score #temp ct.coal < #coalMaxScaled vars at @s run playsound minecraft:entity.item.pickup block @s
 execute if score #bankAccount temp matches 3 at @s run playsound minecraft:entity.item.pickup block @s
 
-execute if predicate mi:chance_0_5 run tag @s[scores={production.coal=1}] add getCoalFortune
+execute if predicate mi:chance_0_5 run tag @s[tag=!coalFortune] add getCoalFortune
 tellraw @s[tag=getCoalFortune] {"text":"You feel the luck empower you and double your coal output!","color":"green"}
-scoreboard players set @s[tag=getCoalFortune] production.coal 2
+scoreboard players operation @s[tag=getCoalFortune] production.coal *= 2 integers
+tag @s[tag=getCoalFortune] add coalFortune
 tag @s remove getCoalFortune
 
 execute unless score #team1FactoryShutdown temp matches 1 at @e[type=minecraft:marker,tag=location.team1.coal] run setblock ~ ~ ~ minecraft:coal_ore keep
