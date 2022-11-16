@@ -17,7 +17,7 @@ execute if score #bankAccount temp matches 3 at @s run playsound minecraft:entit
 
 execute if predicate mi:chance_0_5 run tag @s[tag=!gunpowderFortune] add getGunpowderFortune
 tellraw @s[tag=getGunpowderFortune] {"text":"You feel the luck empower you and double your gunpowder output!","color":"green"}
-scoreboard players set @s[tag=getGunpowderFortune] production.gunpowder 2
+scoreboard players operation @s[tag=getGunpowderFortune] production.gunpowder *= 2 integers
 tag @s[tag=getGunpowderFortune] add gunpowderFortune
 tag @s remove getGunpowderFortune
 
