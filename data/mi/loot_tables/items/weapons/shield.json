@@ -1,0 +1,109 @@
+{
+	"type": "minecraft:command",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:shield",
+					"functions": [
+						{
+							"function": "minecraft:set_name",
+							"entity": "this",
+							"name": {
+								"text": "Shield",
+								"color": "aqua",
+								"bold": false,
+								"italic": false
+							},
+							"conditions": [
+								{
+									"condition": "minecraft:entity_properties",
+									"entity": "this",
+									"predicate": {
+										"team": "team1"
+									}
+								}
+							]
+						},
+						{
+							"function": "minecraft:set_name",
+							"entity": "this",
+							"name": {
+								"text": "Shield",
+								"color": "red",
+								"bold": false,
+								"italic": false
+							},
+							"conditions": [
+								{
+									"condition": "minecraft:entity_properties",
+									"entity": "this",
+									"predicate": {
+										"team": "team2"
+									}
+								}
+							]
+						},
+						{
+							"function": "minecraft:set_banner_pattern",
+							"patterns": [
+								{
+									"pattern": "minecraft:base",
+									"color": "light_blue"
+								},
+								{
+									"pattern": "minecraft:flower",
+									"color": "green"
+								}
+							],
+							"append": false,
+							"conditions": [
+								{
+									"condition": "minecraft:entity_properties",
+									"entity": "this",
+									"predicate": {
+										"team": "team1"
+									}
+								}
+							]
+						},
+						{
+							"function": "minecraft:set_banner_pattern",
+							"patterns": [
+								{
+									"pattern": "minecraft:base",
+									"color": "red"
+								},
+								{
+									"pattern": "minecraft:flower",
+									"color": "green"
+								}
+							],
+							"append": false,
+							"conditions": [
+								{
+									"condition": "minecraft:entity_properties",
+									"entity": "this",
+									"predicate": {
+										"team": "team2"
+									}
+								}
+							]
+						},
+						{
+							"function": "minecraft:set_damage",
+							"damage": 1.0,
+							"add": false
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{HideFlags:127}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
