@@ -33,7 +33,7 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{CustomModelData:1,CanPlaceOn:[coal_block],HideFlags:127}"
+							"tag": "{CustomModelData:1,CanPlaceOn:[coal_block],Unbreakable:1,HideFlags:127}"
 						}
 					]
 				}

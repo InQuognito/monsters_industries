@@ -40,7 +40,7 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{CanDestroy:[coal_ore],HideFlags:127}"
+							"tag": "{CanDestroy:[coal_ore],Unbreakable:1,HideFlags:127}"
 						}
 					]
 				}

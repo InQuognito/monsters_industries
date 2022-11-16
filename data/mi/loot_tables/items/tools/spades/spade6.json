@@ -40,7 +40,7 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{CanDestroy:[podzol],HideFlags:127}"
+							"tag": "{CanDestroy:[podzol],Unbreakable:1,HideFlags:127}"
 						}
 					]
 				}

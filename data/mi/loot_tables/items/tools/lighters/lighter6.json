@@ -40,7 +40,7 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{CanPlaceOn:[coal_block],HideFlags:127}"
+							"tag": "{CanPlaceOn:[coal_block],Unbreakable:1,HideFlags:127}"
 						}
 					]
 				}

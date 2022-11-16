@@ -33,7 +33,7 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{CustomModelData:1,CanDestroy:[coal_ore],HideFlags:127}"
+							"tag": "{CustomModelData:1,CanDestroy:[coal_ore],Unbreakable:1,HideFlags:127}"
 						}
 					]
 				}
