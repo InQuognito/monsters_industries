@@ -2,7 +2,14 @@
 	"type": "minecraft:command",
 	"pools": [
 		{
-			"rolls": 1,
+			"rolls": {
+				"type": "minecraft:score",
+				"target": {
+					"type": "minecraft:fixed",
+					"name": "#sabotageTokensPerKill"
+				},
+				"score": "vars"
+			},
 			"entries": [
 				{
 					"type": "minecraft:item",
