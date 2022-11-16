@@ -1,0 +1,43 @@
+{
+	"type": "minecraft:command",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:flint_and_steel",
+					"functions": [
+						{
+							"function": "minecraft:set_name",
+							"entity": "this",
+							"name": {
+								"text": "Flint and Steel",
+								"color": "white",
+								"bold": false,
+								"italic": false
+							}
+						},
+						{
+							"function": "minecraft:set_lore",
+							"entity": "this",
+							"lore": [
+								{
+									"text": "-=- Harvesting Tool -=-",
+									"color": "yellow",
+									"bold": false,
+									"italic": false
+								}
+							],
+							"replace": true
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{CanPlaceOn:[coal_block],HideFlags:127}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

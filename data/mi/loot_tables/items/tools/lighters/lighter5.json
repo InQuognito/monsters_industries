@@ -1,0 +1,50 @@
+{
+	"type": "minecraft:command",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:flint_and_steel",
+					"functions": [
+						{
+							"function": "minecraft:set_name",
+							"entity": "this",
+							"name": {
+								"text": "Flint and Pyrite",
+								"color": "gold",
+								"bold": false,
+								"italic": false
+							}
+						},
+						{
+							"function": "minecraft:set_lore",
+							"entity": "this",
+							"lore": [
+								{
+									"text": "-=- Harvesting Tool -=-",
+									"color": "yellow",
+									"bold": false,
+									"italic": false
+								}
+							],
+							"replace": true
+						},
+						{
+							"function": "minecraft:set_enchantments",
+							"enchantments": {
+								"minecraft:efficiency": 1
+							},
+							"add": false
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{CustomModelData:4,CanPlaceOn:[coal_block],HideFlags:127}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
