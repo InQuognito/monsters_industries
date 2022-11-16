@@ -10,3 +10,5 @@ gamemode spectator @s
 scoreboard players set @s respawn 61
 
 scoreboard players reset @a[scores={isDead=1..}] isDead
+
+loot give @r[team=team1] loot mi:resources/sabotage_token
