@@ -55,7 +55,7 @@
 								},
 								{
 									"pattern": "minecraft:flower",
-									"color": "green"
+									"color": "lime"
 								}
 							],
 							"append": false,
@@ -78,7 +78,7 @@
 								},
 								{
 									"pattern": "minecraft:flower",
-									"color": "green"
+									"color": "lime"
 								}
 							],
 							"append": false,
