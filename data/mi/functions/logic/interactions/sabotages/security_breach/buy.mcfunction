@@ -1,5 +1,5 @@
-execute if entity @s[team=team1] run scoreboard players operation $team1 stock -= #securityBreach price
-execute if entity @s[team=team2] run scoreboard players operation $team2 stock -= #securityBreach price
+scoreboard players operation #clearSabotageToken temp = #securityBreach price
+function mi:logic/currency/apply_price
 
 execute if entity @s[team=team1] as @a[team=team2] run function mi:logic/interactions/sabotages/security_breach/armor
 execute if entity @s[team=team2] as @a[team=team1] run function mi:logic/interactions/sabotages/security_breach/armor

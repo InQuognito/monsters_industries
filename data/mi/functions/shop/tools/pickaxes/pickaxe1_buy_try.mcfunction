@@ -3,8 +3,8 @@ function mi:logic/currency/reset_temp_prices
 
 execute if score @s pickaxeLevel matches 2.. run title @s actionbar [{"text":"You already own the ","color":"red"},{"text":"Crude Pickaxe","color":"gray"},{"text":"!","color":"red"}]
 
-execute unless score @s pickaxeLevel matches 2.. unless score #temp ct.paper >= #pickaxe1Paper price run title @s actionbar [{"text":"You do not have enough paper to purchase the ","color":"red"},{"text":"Crude Pickaxe","color":"gray"},{"text":"!","color":"red"}]
-execute unless score @s pickaxeLevel matches 2.. unless score #temp ct.coal >= #pickaxe1Coal price run title @s actionbar [{"text":"You do not have enough coal to purchase the ","color":"red"},{"text":"Crude Pickaxe","color":"gray"},{"text":"!","color":"red"}]
+execute unless score @s pickaxeLevel matches 2.. unless score #temp ct.paper >= #pickaxe1Paper price run title @s actionbar [{"text":"You don't have enough paper to purchase the ","color":"red"},{"text":"Crude Pickaxe","color":"gray"},{"text":"!","color":"red"}]
+execute unless score @s pickaxeLevel matches 2.. unless score #temp ct.coal >= #pickaxe1Coal price run title @s actionbar [{"text":"You don't have enough coal to purchase the ","color":"red"},{"text":"Crude Pickaxe","color":"gray"},{"text":"!","color":"red"}]
 execute unless score @s pickaxeLevel matches 2.. if score #temp ct.paper >= #pickaxe1Paper price if score #temp ct.coal >= #pickaxe1Coal price run function mi:shop/tools/pickaxes/pickaxe1_buy
 
 scoreboard players set @s shop 0

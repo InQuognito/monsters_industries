@@ -1,5 +1,5 @@
-execute if entity @s[team=team1] run scoreboard players operation $team1 stock -= #daylightSavings price
-execute if entity @s[team=team2] run scoreboard players operation $team2 stock -= #daylightSavings price
+scoreboard players operation #clearSabotageToken temp = #daylightSavings price
+function mi:logic/currency/apply_price
 
 time set 0t
 

@@ -1,5 +1,5 @@
-execute if entity @s[team=team1] run scoreboard players operation $team1 stock -= #directExposure price
-execute if entity @s[team=team2] run scoreboard players operation $team2 stock -= #directExposure price
+scoreboard players operation #clearSabotageToken temp = #directExposure price
+function mi:logic/currency/apply_price
 
 execute if entity @s[team=team1] as @a[team=team2] at @e[type=minecraft:marker,tag=location.directExposure.team2] run teleport @s ~ ~ ~
 execute if entity @s[team=team2] as @a[team=team1] at @e[type=minecraft:marker,tag=location.directExposure.team1] run teleport @s ~ ~ ~

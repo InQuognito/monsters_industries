@@ -1,5 +1,5 @@
-execute if entity @s[team=team1] run scoreboard players operation $team1 stock -= #directDeposit price
-execute if entity @s[team=team2] run scoreboard players operation $team2 stock -= #directDeposit price
+scoreboard players operation #clearSabotageToken temp = #directDeposit price
+function mi:logic/currency/apply_price
 
 execute if entity @s[team=team1] run function mi:logic/interactions/sabotages/direct_deposit/on_team1
 execute if entity @s[team=team2] run function mi:logic/interactions/sabotages/direct_deposit/on_team2

@@ -14,4 +14,4 @@ scoreboard players reset #clearSpiderEye temp
 scoreboard players reset #clearGunpowder temp
 scoreboard players reset #clearSlimeball temp
 scoreboard players reset #clearNetherite temp
-scoreboard players reset #clearToken temp
+scoreboard players reset #clearMonsterToken temp

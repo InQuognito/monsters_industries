@@ -23,6 +23,6 @@ execute if score #team2Interval forge matches 9 run data merge block ~ ~ ~ {Text
 execute if score #team2Interval forge matches 10 run data merge block ~ ~ ~ {Text2:'{"text":"[ MAX ]"}'}
 execute if score #team2Interval forge matches 10 run setblock ~ ~-1 ~ minecraft:air replace
 
-scoreboard players operation #clearToken temp = #forgeIntervalTokens price
+scoreboard players operation #clearMonsterToken temp = #forgeIntervalTokens price
 scoreboard players operation #clearNetherite temp = #forgeIntervalNetherite price
 function mi:logic/currency/apply_price

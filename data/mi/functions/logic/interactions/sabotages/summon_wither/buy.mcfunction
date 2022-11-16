@@ -1,5 +1,5 @@
-execute if entity @s[team=team1] run scoreboard players operation $team1 stock -= #summonWither price
-execute if entity @s[team=team2] run scoreboard players operation $team2 stock -= #summonWither price
+scoreboard players operation #clearSabotageToken temp = #summonWither price
+function mi:logic/currency/apply_price
 
 execute if entity @s[team=team1] run summon minecraft:wither ~ ~ ~ {CustomName:'"Wither"',CustomNameVisible:1b,PersistenceRequired:1b,Glowing:1b,Attributes:[{Name:"minecraft:generic.follow_range",Base:500}],Team:team1,DeathLootTable:"mi:entity_drops/others/wither"}
 execute if entity @s[team=team2] run summon minecraft:wither ~ ~ ~ {CustomName:'"Wither"',CustomNameVisible:1b,PersistenceRequired:1b,Glowing:1b,Attributes:[{Name:"minecraft:generic.follow_range",Base:500}],Team:team2,DeathLootTable:"mi:entity_drops/others/wither"}
