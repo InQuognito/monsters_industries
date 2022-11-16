@@ -84,7 +84,9 @@ scoreboard players set #spade2Bone price 32
 scoreboard players set #spade3Paper price 96
 scoreboard players set #spade3Bone price 64
 scoreboard players set #spade4Paper price 160
-scoreboard players set #spade4Bone price 128
+scoreboard players set #spade4Token price 2
+scoreboard players set #spade5Paper price 1024
+scoreboard players set #spade5Netherite price 64
 
 scoreboard players set #lighter1Paper price 32
 scoreboard players set #lighter1Gunpowder price 16
@@ -93,7 +95,9 @@ scoreboard players set #lighter2Gunpowder price 32
 scoreboard players set #lighter3Paper price 96
 scoreboard players set #lighter3Gunpowder price 64
 scoreboard players set #lighter4Paper price 160
-scoreboard players set #lighter4Gunpowder price 128
+scoreboard players set #lighter4Token price 2
+scoreboard players set #lighter5Paper price 1024
+scoreboard players set #lighter5Netherite price 64
 
 # Upgrades
 scoreboard players set #paperProduction1 price 16
