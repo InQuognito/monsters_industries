@@ -1,4 +1,4 @@
-summon minecraft:area_effect_cloud ^ ^ ^1.5 {Tags:["direction"]}
+summon minecraft:area_effect_cloud ^ ^ ^1 {Tags:["direction"]}
 
 execute store result score #playerX pos run data get entity @s Pos[0] 1000
 execute store result score #playerY pos run data get entity @s Pos[1] 1000
