@@ -29,14 +29,14 @@ execute at @e[tag=location.team1.forge.receptacle] if entity @e[tag=killIngot,di
 # Stage Changes
 execute as @e[tag=forgeRawBlock,nbt=!{HandItems:[{id:"minecraft:iron_block",Count:1b}]}] run data merge entity @s {HandItems:[{id:"iron_block",Count:1b}]}
 execute as @e[tag=forgeRawIngot,nbt=!{HandItems:[{id:"minecraft:iron_ingot",Count:1b}],Pose:{RightArm:[180f,0f,0f]}}] run data merge entity @s {HandItems:[{id:"iron_ingot",Count:1b}],Pose:{RightArm:[180f,0f,0f]}}
-execute as @e[tag=forgeRawIngot] at @s run tp @s ~ 13.06 ~
+execute as @e[tag=forgeRawIngot] at @s run teleport @s ~ 13.06 ~
 execute as @e[tag=forgeRefinedIngot,nbt=!{HandItems:[{id:"minecraft:netherite_ingot",Count:1b}]}] run data merge entity @s {HandItems:[{id:"netherite_ingot",Count:1b}]}
 
 # Conveyor Changes
-execute as @e[tag=team1,tag=forgeFalling] at @s run tp @s ~ ~-0.05 ~
-execute as @e[tag=team1,tag=forgeConveyor1] at @s run tp @s ~ ~ ~-0.01
-execute as @e[tag=team1,tag=forgeConveyor2] at @s run tp @s ~0.01 ~ ~
-execute as @e[tag=team1,tag=forgeConveyor3] at @s run tp @s ~ ~ ~0.01
+execute as @e[tag=team1,tag=forgeFalling] at @s run teleport @s ~ ~-0.05 ~
+execute as @e[tag=team1,tag=forgeConveyor1] at @s run teleport @s ~ ~ ~-0.01
+execute as @e[tag=team1,tag=forgeConveyor2] at @s run teleport @s ~0.01 ~ ~
+execute as @e[tag=team1,tag=forgeConveyor3] at @s run teleport @s ~ ~ ~0.01
 
 scoreboard players remove #team1Forge timer 1
 execute if score #team1Forge timer matches ..0 run function mi:logic/forge/summon_resource_team1
@@ -72,14 +72,14 @@ execute at @e[tag=location.team2.forge.receptacle] if entity @e[tag=killIngot,di
 # Stage Changes
 execute as @e[tag=forgeRawBlock,nbt=!{HandItems:[{id:"minecraft:iron_block",Count:1b}]}] run data merge entity @s {HandItems:[{id:"iron_block",Count:1b}]}
 execute as @e[tag=forgeRawIngot,nbt=!{HandItems:[{id:"minecraft:iron_ingot",Count:1b}],Pose:{RightArm:[180f,0f,0f]}}] run data merge entity @s {HandItems:[{id:"minecraft:iron_ingot",Count:1b}],Pose:{RightArm:[180f,0f,0f]}}
-execute as @e[tag=forgeRawIngot] at @s run tp @s ~ 13.06 ~
+execute as @e[tag=forgeRawIngot] at @s run teleport @s ~ 13.06 ~
 execute as @e[tag=forgeRefinedIngot,nbt=!{HandItems:[{id:"minecraft:netherite_ingot",Count:1b}]}] run data merge entity @s {HandItems:[{id:"minecraft:netherite_ingot",Count:1b}]}
 
 # Conveyor Changes
-execute as @e[tag=team2,tag=forgeFalling] at @s run tp @s ~ ~-0.05 ~
-execute as @e[tag=team2,tag=forgeConveyor1] at @s run tp @s ~ ~ ~0.01
-execute as @e[tag=team2,tag=forgeConveyor2] at @s run tp @s ~-0.01 ~ ~
-execute as @e[tag=team2,tag=forgeConveyor3] at @s run tp @s ~ ~ ~-0.01
+execute as @e[tag=team2,tag=forgeFalling] at @s run teleport @s ~ ~-0.05 ~
+execute as @e[tag=team2,tag=forgeConveyor1] at @s run teleport @s ~ ~ ~0.01
+execute as @e[tag=team2,tag=forgeConveyor2] at @s run teleport @s ~-0.01 ~ ~
+execute as @e[tag=team2,tag=forgeConveyor3] at @s run teleport @s ~ ~ ~-0.01
 
 scoreboard players remove #team2Forge timer 1
 execute if score #team2Forge timer matches ..0 run function mi:logic/forge/summon_resource_team2

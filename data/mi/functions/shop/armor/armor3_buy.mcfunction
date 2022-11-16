@@ -4,7 +4,8 @@ item replace entity @s armor.feet with minecraft:iron_boots{Unbreakable:1,displa
 
 title @s actionbar [{"text":"You have purchased ","color":"green"},{"text":"Iron Armor","color":"white"},{"text":"!","color":"green"}]
 
-scoreboard players operation #clearPaper temp = #armor3 price
+scoreboard players operation #clearPaper temp = #armor3Paper price
+scoreboard players operation #clearGunpowder temp = #armor3Gunpowder price
 function mi:logic/currency/apply_price
 
 scoreboard players set @s armorLevel 3

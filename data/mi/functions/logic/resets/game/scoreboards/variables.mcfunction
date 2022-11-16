@@ -1,45 +1,39 @@
 # Weapons
 scoreboard players set #sword1 price 32
-scoreboard players set #sword2 price 80
-scoreboard players set #sword3 price 192
+scoreboard players set #sword2 price 128
+scoreboard players set #sword3Paper price 384
+scoreboard players set #sword3Coal price 64
 scoreboard players set #sword4Paper price 512
 scoreboard players set #sword4Netherite price 32
 
-scoreboard players set #shield price 224
+scoreboard players set #shieldPaper price 224
+scoreboard players set #shieldSlimeball price 16
 
 scoreboard players set #bow price 128
 scoreboard players set #crossbow price 160
 
-scoreboard players set #trident price 256
+scoreboard players set #trident price 512
+
+scoreboard players set #dragonsBreath price 512
 
 # Ammo
-scoreboard players set #arrow16 price 32
-scoreboard players operation #mult temp = #arrow16 price
-scoreboard players operation #mult temp *= #4 integers
-scoreboard players operation #arrow64 price = #mult temp
-
-scoreboard players set #firework4 price 64
-scoreboard players operation #mult temp = #firework4 price
-scoreboard players operation #mult temp *= #4 integers
-scoreboard players operation #firework16 price = #mult temp
-
-scoreboard players set #bayonet4 price 96
-scoreboard players operation #mult temp = #bayonet4 price
-scoreboard players operation #mult temp *= #4 integers
-scoreboard players operation #bayonet16 price = #mult temp
-
-scoreboard players set #sniper4 price 512
-scoreboard players operation #mult temp = #sniper4 price
-scoreboard players operation #mult temp *= #4 integers
-scoreboard players operation #sniper16 price = #mult temp
-
-scoreboard players set #dragonsBreath2 price 1024
+scoreboard players set #arrow price 8
+scoreboard players set #fireworkPaper price 24
+scoreboard players set #fireworkGunpowder price 4
+scoreboard players set #bayonetPaper price 48
+scoreboard players set #bayonetGunpowder price 8
+scoreboard players set #sniperPaper price 64
+scoreboard players set #sniperGunpowder price 8
 
 # Armor
 scoreboard players set #armor1 price 32
-scoreboard players set #armor2 price 64
-scoreboard players set #armor3 price 80
-scoreboard players set #armor4 price 192
+scoreboard players set #armor2Paper price 128
+scoreboard players set #armor2Gunpowder price 32
+scoreboard players set #armor3Paper price 256
+scoreboard players set #armor3Gunpowder price 64
+scoreboard players set #armor4Paper price 384
+scoreboard players set #armor4Coal price 256
+scoreboard players set #armor4Gunpowder price 128
 scoreboard players set #armor5Paper price 1024
 scoreboard players set #armor5Netherite price 64
 
@@ -72,10 +66,10 @@ scoreboard players set #lighter4Paper price 160
 scoreboard players set #lighter4Gunpowder price 128
 
 # Upgrades
-scoreboard players set #paperProduction1 price 32
-scoreboard players set #paperProduction2 price 64
-scoreboard players set #paperProduction3 price 128
-scoreboard players set #lever price 384
+scoreboard players set #paperProduction1 price 16
+scoreboard players set #paperProduction2 price 32
+scoreboard players set #paperProduction3 price 64
+scoreboard players set #lever price 192
 
 # Mobs
 scoreboard players set zombieBasePaper price 8

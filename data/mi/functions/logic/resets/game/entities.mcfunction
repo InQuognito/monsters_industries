@@ -15,4 +15,4 @@ summon minecraft:armor_stand -34.8 7.4 -109.95 {Invisible:1b,Invulnerable:1b,NoG
 
 setworldspawn -29 5 -109
 spawnpoint @a -29 5 -109 270.0
-tp @a -28.5 5.0 -108.5 -90.0 0.0
+teleport @a -28.5 5.0 -108.5 -90.0 0.0

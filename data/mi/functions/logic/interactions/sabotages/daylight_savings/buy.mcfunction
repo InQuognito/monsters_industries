@@ -9,6 +9,3 @@ execute if entity @s[team=team2] run tellraw @a[team=team2] {"text":"Daylight Sa
 execute if entity @s[team=team2] run tellraw @a[team=team1] {"text":"The opponent has activated Daylight Savings!","color":"red"}
 
 function mi:logic/interactions/sabotages/multi_use_bought
-
-execute if entity @s[team=team1] run summon minecraft:marker ^ ^ ^ {Tags:["sabotageCooldown","team1"]}
-execute if entity @s[team=team2] run summon minecraft:marker ^ ^ ^ {Tags:["sabotageCooldown","team2"]}

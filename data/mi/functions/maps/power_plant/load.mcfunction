@@ -102,7 +102,7 @@ spawnpoint @a[team=team2] 184 28 -125 0.0
 
 title @a actionbar [{"text":"Selected Map: ","bold":true,"color":"dark_aqua"},{"text":"[Power Plant]","bold":true,"color":"gold"}]
 
-tp @a[team=team1] 97.0 28.0 -125.0 270.0 0.0
-tp @a[team=team2] 184.0 28.0 -125.0 90.0 0.0
-execute if entity @a[team=!spectators] as @a[team=spectators] run tp @s @r[team=!spectators]
-execute unless entity @a[team=!spectators] run tp @a[team=spectators] 140.5 43.0 -125.0 180.0 90.0
+teleport @a[team=team1] 97.0 28.0 -125.0 270.0 0.0
+teleport @a[team=team2] 184.0 28.0 -125.0 90.0 0.0
+execute if entity @a[team=!spectators] as @a[team=spectators] run teleport @s @r[team=!spectators]
+execute unless entity @a[team=!spectators] run teleport @a[team=spectators] 140.5 43.0 -125.0 180.0 90.0

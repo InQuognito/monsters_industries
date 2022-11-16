@@ -122,29 +122,29 @@ setblock 154 19 -160 minecraft:oak_button[face=wall,facing=west] replace
 setblock 154 20 -160 minecraft:oak_wall_sign[facing=west]{Color:"black",Text2:'{"text":"Clear Barricade"}',Text3:'[{"score":{"name":"#sabotageBarricade","objective":"price"}},{"text":" Paper"}]'} destroy
 
 # Team Upgrades
-tp @e[type=minecraft:marker,tag=reset.objectMarker] 74.5 20.5 -104.5 -90.0 0.0
+teleport @e[type=minecraft:marker,tag=reset.objectMarker] 74.5 20.5 -104.5 -90.0 0.0
 execute as @e[type=minecraft:marker,tag=reset.objectMarker] at @s run function mi:logic/resets/structures/team_upgrades/max_health
-tp @e[type=minecraft:marker,tag=reset.objectMarker] 206.5 20.5 -145.5 90.0 0.0
+teleport @e[type=minecraft:marker,tag=reset.objectMarker] 206.5 20.5 -145.5 90.0 0.0
 execute as @e[type=minecraft:marker,tag=reset.objectMarker] at @s run function mi:logic/resets/structures/team_upgrades/max_health
 
-tp @e[type=minecraft:marker,tag=reset.objectMarker] 74.5 20.5 -107.5 -90.0 0.0
+teleport @e[type=minecraft:marker,tag=reset.objectMarker] 74.5 20.5 -107.5 -90.0 0.0
 execute as @e[type=minecraft:marker,tag=reset.objectMarker] at @s run function mi:logic/resets/structures/team_upgrades/swiftness
-tp @e[type=minecraft:marker,tag=reset.objectMarker] 206.5 20.5 -142.5 90.0 0.0
+teleport @e[type=minecraft:marker,tag=reset.objectMarker] 206.5 20.5 -142.5 90.0 0.0
 execute as @e[type=minecraft:marker,tag=reset.objectMarker] at @s run function mi:logic/resets/structures/team_upgrades/swiftness
 
-tp @e[type=minecraft:marker,tag=reset.objectMarker] 74.5 20.5 -110.5 -90.0 0.0
+teleport @e[type=minecraft:marker,tag=reset.objectMarker] 74.5 20.5 -110.5 -90.0 0.0
 execute as @e[type=minecraft:marker,tag=reset.objectMarker] at @s run function mi:logic/resets/structures/team_upgrades/bank_account
-tp @e[type=minecraft:marker,tag=reset.objectMarker] 206.5 20.5 -139.5 90.0 0.0
+teleport @e[type=minecraft:marker,tag=reset.objectMarker] 206.5 20.5 -139.5 90.0 0.0
 execute as @e[type=minecraft:marker,tag=reset.objectMarker] at @s run function mi:logic/resets/structures/team_upgrades/bank_account
 
-tp @e[type=minecraft:marker,tag=reset.objectMarker] 74.5 20.5 -113.5 -90.0 0.0
+teleport @e[type=minecraft:marker,tag=reset.objectMarker] 74.5 20.5 -113.5 -90.0 0.0
 execute as @e[type=minecraft:marker,tag=reset.objectMarker] at @s run function mi:logic/resets/structures/team_upgrades/recycling
-tp @e[type=minecraft:marker,tag=reset.objectMarker] 206.5 20.5 -136.5 90.0 0.0
+teleport @e[type=minecraft:marker,tag=reset.objectMarker] 206.5 20.5 -136.5 90.0 0.0
 execute as @e[type=minecraft:marker,tag=reset.objectMarker] at @s run function mi:logic/resets/structures/team_upgrades/recycling
 
-tp @e[type=minecraft:marker,tag=reset.objectMarker] 74.5 20.5 -116.5 -90.0 0.0
+teleport @e[type=minecraft:marker,tag=reset.objectMarker] 74.5 20.5 -116.5 -90.0 0.0
 execute as @e[type=minecraft:marker,tag=reset.objectMarker] at @s run function mi:logic/resets/structures/team_upgrades/management
-tp @e[type=minecraft:marker,tag=reset.objectMarker] 206.5 20.5 -133.5 90.0 0.0
+teleport @e[type=minecraft:marker,tag=reset.objectMarker] 206.5 20.5 -133.5 90.0 0.0
 execute as @e[type=minecraft:marker,tag=reset.objectMarker] at @s run function mi:logic/resets/structures/team_upgrades/management
 
 # Sentries
