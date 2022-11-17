@@ -17,7 +17,7 @@ tag @s remove self
 
 fill 79 14 -122 79 15 -122 minecraft:air destroy
 
-scoreboard players operation #clearPaper temp = #forgeStart price
+scoreboard players operation clearPaper temp = #forgeStart price
 function mi:logic/currency/apply_price
 
 advancement grant @a[team=team1] only mi:start_forge

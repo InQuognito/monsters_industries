@@ -56,8 +56,8 @@ execute unless score #team2Fusion temp matches 1.. run scoreboard players set #t
 execute if entity @s[team=team1] run scoreboard players operation #fusion temp = #team1Fusion temp
 execute if entity @s[team=team2] run scoreboard players operation #fusion temp = #team2Fusion temp
 
-execute if entity @s[team=team1] run scoreboard players operation #mobShopMult temp = #team1MobShopMult temp
-execute if entity @s[team=team2] run scoreboard players operation #mobShopMult temp = #team2MobShopMult temp
+execute if entity @s[team=team1] run scoreboard players operation mobShopMult temp = #team1MobShopMult temp
+execute if entity @s[team=team2] run scoreboard players operation mobShopMult temp = #team2MobShopMult temp
 
 execute if entity @s[team=team1] run scoreboard players operation #temp enchantment = #team1 enchantment
 execute if entity @s[team=team2] run scoreboard players operation #temp enchantment = #team2 enchantment

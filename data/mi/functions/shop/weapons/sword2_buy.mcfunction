@@ -4,5 +4,5 @@ scoreboard players set @s swordLevel 2
 
 title @s actionbar [{"text":"You have purchased an ","color":"green"},{"text":"Iron Sword","color":"white"},{"text":"!","color":"green"}]
 
-scoreboard players operation #clearPaper temp = #sword2 price
+scoreboard players operation clearPaper temp = #sword2 price
 function mi:logic/currency/apply_price

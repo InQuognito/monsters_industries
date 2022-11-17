@@ -1,4 +1,4 @@
-scoreboard players operation #clearSabotageToken temp = #securityBreach price
+scoreboard players operation clearSabotageToken temp = #securityBreach price
 function mi:logic/currency/apply_price
 
 execute if entity @s[team=team1] as @a[team=team2] run function mi:logic/interactions/sabotages/security_breach/armor

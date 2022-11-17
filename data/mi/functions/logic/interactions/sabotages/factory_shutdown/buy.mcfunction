@@ -1,4 +1,4 @@
-scoreboard players operation #clearSabotageToken temp = #factoryShutdown price
+scoreboard players operation clearSabotageToken temp = #factoryShutdown price
 function mi:logic/currency/apply_price
 
 execute if entity @s[team=team1] run function mi:logic/interactions/sabotages/factory_shutdown/on_team2

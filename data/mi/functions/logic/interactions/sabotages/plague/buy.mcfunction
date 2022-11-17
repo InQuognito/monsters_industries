@@ -1,4 +1,4 @@
-scoreboard players operation #clearSabotageToken temp = #plague price
+scoreboard players operation clearSabotageToken temp = #plague price
 function mi:logic/currency/apply_price
 
 execute if entity @s[team=team1] run scoreboard players set #team2Plague temp 1

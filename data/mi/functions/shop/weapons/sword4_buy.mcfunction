@@ -4,6 +4,6 @@ scoreboard players set @s swordLevel 4
 
 title @s actionbar [{"text":"You have purchased a ","color":"green"},{"text":"Netherite Sword","color":"dark_gray"},{"text":"!","color":"green"}]
 
-scoreboard players operation #clearPaper temp = #sword4Paper price
-scoreboard players operation #clearNetherite temp = #sword4Netherite price
+scoreboard players operation clearPaper temp = #sword4Paper price
+scoreboard players operation clearNetherite temp = #sword4Netherite price
 function mi:logic/currency/apply_price

@@ -1,4 +1,4 @@
-scoreboard players operation #clearSabotageToken temp = #directExposure price
+scoreboard players operation clearSabotageToken temp = #directExposure price
 function mi:logic/currency/apply_price
 
 execute if entity @s[team=team1] as @a[team=team2] at @e[type=minecraft:marker,tag=location.directExposure.team2] run teleport @s ~ ~ ~

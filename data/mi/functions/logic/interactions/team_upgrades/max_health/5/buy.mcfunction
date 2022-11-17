@@ -13,6 +13,6 @@ execute if entity @s[team=team1] run tellraw @a[team=team1,tag=!self] [{"text":"
 execute if entity @s[team=team2] run tellraw @a[team=team2,tag=!self] [{"text":"Your teammate has purchased ","color":"green"},{"text":"Max Health 5","color":"gold"},{"text":"!","color":"green"}]
 tag @s remove self
 
-scoreboard players operation #clearPaper temp = #maxHealth5Paper price
-scoreboard players operation #clearSlimeball temp = #maxHealth5Slimeball price
+scoreboard players operation clearPaper temp = #maxHealth5Paper price
+scoreboard players operation clearSlimeball temp = #maxHealth5Slimeball price
 function mi:logic/currency/apply_price

@@ -2,5 +2,5 @@ give @s minecraft:carrot_on_a_stick{dragonsBreath:1,Unbreakable:1,display:{Name:
 
 title @s actionbar {"text":"You have purchased a Dragon's Breath!","color":"green"}
 
-scoreboard players operation #clearPaper temp = #dragonsBreath price
+scoreboard players operation clearPaper temp = #dragonsBreath price
 function mi:logic/currency/apply_price

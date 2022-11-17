@@ -1,4 +1,4 @@
-scoreboard players operation #clearSabotageToken temp = #bulwark price
+scoreboard players operation clearSabotageToken temp = #bulwark price
 function mi:logic/currency/apply_price
 
 execute if entity @s[team=team1] run scoreboard players set #team1Bulwark temp 1

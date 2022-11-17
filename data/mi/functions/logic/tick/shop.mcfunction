@@ -8,14 +8,14 @@ execute if score @s shop matches 7 run function mi:shop/weapons/crossbow_buy_try
 execute if score @s shop matches 8 run function mi:shop/weapons/trident_buy_try
 execute if score @s shop matches 9 run function mi:shop/weapons/dragons_breath_buy_try
 
-execute if score @s shop matches 10 run function mi:shop/ammo/arrows16_buy_try
-execute if score @s shop matches 11 run function mi:shop/ammo/arrows64_buy_try
-execute if score @s shop matches 12 run function mi:shop/ammo/firework4_buy_try
-execute if score @s shop matches 13 run function mi:shop/ammo/firework16_buy_try
-execute if score @s shop matches 14 run function mi:shop/ammo/bayonet4_buy_try
-execute if score @s shop matches 15 run function mi:shop/ammo/bayonet16_buy_try
-execute if score @s shop matches 16 run function mi:shop/ammo/sniper4_buy_try
-execute if score @s shop matches 17 run function mi:shop/ammo/sniper16_buy_try
+execute if score @s shop matches 10 run function mi:shop/ammo/arrow_buy_try
+execute if score @s shop matches 11 run function mi:shop/ammo/arrow_buy_try
+execute if score @s shop matches 12 run function mi:shop/ammo/firework_buy_try
+execute if score @s shop matches 13 run function mi:shop/ammo/firework_buy_try
+execute if score @s shop matches 14 run function mi:shop/ammo/bayonet_buy_try
+execute if score @s shop matches 15 run function mi:shop/ammo/bayonet_buy_try
+execute if score @s shop matches 16 run function mi:shop/ammo/sniper_buy_try
+execute if score @s shop matches 17 run function mi:shop/ammo/sniper_buy_try
 
 execute if score @s shop matches 18 run function mi:shop/armor/armor1_buy_try
 execute if score @s shop matches 19 run function mi:shop/armor/armor2_buy_try

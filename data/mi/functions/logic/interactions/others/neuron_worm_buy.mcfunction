@@ -8,5 +8,5 @@ execute if entity @s[team=team2] run setblock ^ ^ ^-1 minecraft:lime_terracotta 
 
 setblock ^ ^ ^ minecraft:air replace
 
-scoreboard players operation #clearMonsterToken temp = neuronWorm price
+scoreboard players operation clearMonsterToken temp = neuronWorm price
 function mi:logic/currency/apply_price

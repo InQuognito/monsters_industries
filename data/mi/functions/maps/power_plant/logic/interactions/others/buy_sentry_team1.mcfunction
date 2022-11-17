@@ -20,5 +20,5 @@ title @s actionbar [{"text":"You have deployed a sentry!","color":"green"}]
 tellraw @a[team=team1,tag=!self] [{"text":"Your teammate has deployed a sentry!","color":"green"}]
 tag @s remove self
 
-scoreboard players operation #clearMonsterToken temp = #sentry price
+scoreboard players operation clearMonsterToken temp = #sentry price
 function mi:logic/currency/apply_price

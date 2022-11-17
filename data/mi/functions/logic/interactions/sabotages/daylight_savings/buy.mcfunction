@@ -1,4 +1,4 @@
-scoreboard players operation #clearSabotageToken temp = #daylightSavings price
+scoreboard players operation clearSabotageToken temp = #daylightSavings price
 function mi:logic/currency/apply_price
 
 time set 0t

@@ -20,5 +20,5 @@ execute if entity @s[team=team2] as @a[team=team2] run function mi:logic/credit_
 
 function mi:logic/resources/transfer_to_bank_account/check
 
-scoreboard players operation #clearPaper temp = #bankAccount1 price
+scoreboard players operation clearPaper temp = #bankAccount1 price
 function mi:logic/currency/apply_price

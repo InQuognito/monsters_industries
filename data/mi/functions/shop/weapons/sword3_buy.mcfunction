@@ -4,6 +4,6 @@ scoreboard players set @s swordLevel 3
 
 title @s actionbar [{"text":"You have purchased a ","color":"green"},{"text":"Diamond Sword","color":"aqua"},{"text":"!","color":"green"}]
 
-scoreboard players operation #clearPaper temp = #sword3Paper price
-scoreboard players operation #clearCoal temp = #sword3Coal price
+scoreboard players operation clearPaper temp = #sword3Paper price
+scoreboard players operation clearCoal temp = #sword3Coal price
 function mi:logic/currency/apply_price

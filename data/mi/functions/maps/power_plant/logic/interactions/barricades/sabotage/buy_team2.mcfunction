@@ -6,7 +6,7 @@ title @s actionbar {"text":"You clear the old barricade...","color":"green"}
 tellraw @a[team=team2,tag=!self] {"text":"Your teammate cleared the sabotage room barricade!","color":"green"}
 tag @s remove self
 
-scoreboard players operation #clearPaper temp = #sabotageBarricade price
+scoreboard players operation clearPaper temp = #sabotageBarricade price
 function mi:logic/currency/apply_price
 
 execute at @s run playsound minecraft:entity.generic.explode block @a[team=team2]

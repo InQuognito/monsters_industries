@@ -12,6 +12,6 @@ title @s actionbar {"text":"You shortened the track!","color":"green"}
 tellraw @a[team=team2,tag=!self] {"text":"Your teammate shortened the mineshaft track!","color":"green"}
 tag @s remove self
 
-scoreboard players operation #clearPaper temp = spiderEyeTrack2Paper price
-scoreboard players operation #clearSpiderEye temp = spiderEyeTrack2SpiderEye price
+scoreboard players operation clearPaper temp = spiderEyeTrack2Paper price
+scoreboard players operation clearSpiderEye temp = spiderEyeTrack2SpiderEye price
 function mi:logic/currency/apply_price

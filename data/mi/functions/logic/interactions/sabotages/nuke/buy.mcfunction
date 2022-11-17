@@ -1,4 +1,4 @@
-scoreboard players operation #clearSabotageToken temp = #nuke price
+scoreboard players operation clearSabotageToken temp = #nuke price
 function mi:logic/currency/apply_price
 
 execute if entity @s[team=team1] run kill @e[type=#mi:hostile_mobs,team=team2]

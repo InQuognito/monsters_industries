@@ -1,0 +1,118 @@
+{
+	"type": "minecraft:command",
+	"pools": [
+		{
+			"rolls": {
+				"type": "minecraft:score",
+				"target": {
+					"type": "minecraft:fixed",
+					"name": "buyMult"
+				},
+				"score": "temp"
+			},
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:firework_rocket",
+					"functions": [
+						{
+							"function": "minecraft:set_name",
+							"entity": "this",
+							"name": {
+								"text": "Bayonet",
+								"color": "aqua",
+								"bold": false,
+								"italic": false
+							},
+							"conditions": [
+								{
+									"condition": "minecraft:entity_properties",
+									"entity": "this",
+									"predicate": {
+										"team": "team1"
+									}
+								}
+							]
+						},
+						{
+							"function": "minecraft:set_name",
+							"entity": "this",
+							"name": {
+								"text": "Bayonet",
+								"color": "red",
+								"bold": false,
+								"italic": false
+							},
+							"conditions": [
+								{
+									"condition": "minecraft:entity_properties",
+									"entity": "this",
+									"predicate": {
+										"team": "team2"
+									}
+								}
+							]
+						},
+						{
+							"function": "minecraft:set_lore",
+							"entity": "this",
+							"lore": [
+								{
+									"text": "-=- Crossbow Ammo -=-",
+									"color": "yellow",
+									"bold": false,
+									"italic": false
+								},
+								{
+									"text": "[!] ",
+									"color": "red",
+									"bold": true,
+									"italic": false,
+									"extra": [
+										{
+											"text": "Must be held in the offhand to work!",
+											"color": "red",
+											"bold": false,
+											"italic": false
+										}
+									]
+								}
+							],
+							"replace": true
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{Fireworks:{Explosions:[{Type:2,Colors:[I;6719955]},{Type:2,Colors:[I;6719955]},{Type:2,Colors:[I;6719955]}]}}",
+							"conditions": [
+								{
+									"condition": "minecraft:entity_properties",
+									"entity": "this",
+									"predicate": {
+										"team": "team1"
+									}
+								}
+							]
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{Fireworks:{Explosions:[{Type:2,Colors:[I;11743532]},{Type:2,Colors:[I;11743532]},{Type:2,Colors:[I;11743532]}]}}",
+							"conditions": [
+								{
+									"condition": "minecraft:entity_properties",
+									"entity": "this",
+									"predicate": {
+										"team": "team2"
+									}
+								}
+							]
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{Fireworks:{Flight:-2},LifeTime:600,HideFlags:127}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
