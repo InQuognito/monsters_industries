@@ -14,5 +14,5 @@ execute as @e[type=#mi:spiders,team=team1,x=141,y=19,z=-171,dx=0,dy=13,dz=88] at
 execute unless entity @e[team=team1,tag=phoenixSentry] run scoreboard players add phoenixSentryTeam1 timer 1
 execute unless entity @e[team=team2,tag=phoenixSentry] run scoreboard players add phoenixSentryTeam2 timer 1
 
-execute if score phoenixSentryTeam1 timer matches 600.. run function mi:maps/power_plant/logic/interactions/others/summon_phoenix_sentry_team1
-execute if score phoenixSentryTeam2 timer matches 600.. run function mi:maps/power_plant/logic/interactions/others/summon_phoenix_sentry_team2
+execute if score phoenixSentryTeam1 timer matches 600.. positioned 131 19 -126 run function mi:maps/power_plant/logic/interactions/others/summon_phoenix_sentry_team1
+execute if score phoenixSentryTeam2 timer matches 600.. positioned 149 19 -125 run function mi:maps/power_plant/logic/interactions/others/summon_phoenix_sentry_team2
