@@ -335,7 +335,7 @@ scoreboard players set #swiftness2 price 576
 scoreboard players set #swiftness3 price 704
 
 # Wall Street
-scoreboard players set #wallStreetMax vars 75
+scoreboard players set #wallStreetMax vars 50
 scoreboard players set #wallStreet1Percent vars 200
 scoreboard players operation #wallStreet1 vars = $stockLimit stock
 scoreboard players operation #wallStreet1 vars /= #wallStreet1Percent vars
