@@ -1,4 +1,4 @@
-scoreboard players operation $team1 stock -= #death vars
+#scoreboard players operation $team1 stock -= #death vars
 scoreboard players operation $team2 stock += #kill vars
 
 execute if score $difficulty mode matches 2 run scoreboard players add #team1Dead temp 1

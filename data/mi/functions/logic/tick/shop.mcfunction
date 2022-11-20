@@ -43,3 +43,5 @@ execute if score @s shop matches 38 run function mi:shop/upgrades/paper_producti
 execute if score @s shop matches 39 run function mi:shop/upgrades/paper_production2_buy_try
 execute if score @s shop matches 40 run function mi:shop/upgrades/paper_production3_buy_try
 execute if score @s shop matches 41 run function mi:shop/upgrades/lever_buy_try
+
+scoreboard players enable @s shop

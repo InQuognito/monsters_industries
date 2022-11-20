@@ -213,10 +213,10 @@ scoreboard players set spiderEyeTrack2Paper price 512
 scoreboard players set spiderEyeTrack2SpiderEye price 32
 
 # Kill/Death Stock Values
-execute if score $difficulty mode matches 0 run scoreboard players set #deathPercent vars 40
-execute if score $difficulty mode matches 0 run scoreboard players set #deathPercent vars 20
-scoreboard players operation #death vars = $stockLimit stock
-scoreboard players operation #death vars /= #deathPercent vars
+#execute if score $difficulty mode matches 0 run scoreboard players set #deathPercent vars 40
+#execute if score $difficulty mode matches 0 run scoreboard players set #deathPercent vars 20
+#scoreboard players operation #death vars = $stockLimit stock
+#scoreboard players operation #death vars /= #deathPercent vars
 scoreboard players set #killPercent vars 10
 scoreboard players operation #kill vars = $stockLimit stock
 scoreboard players operation #kill vars /= #killPercent vars
