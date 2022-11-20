@@ -1,4 +1,4 @@
-scoreboard players set #team2 production.slimeball 2
+scoreboard players operation #team2 production.slimeball *= 2 integers
 
 tag @s add self
 title @s actionbar {"text":"You repair the old reactor.","color":"green"}
