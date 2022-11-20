@@ -294,9 +294,9 @@ execute if score $stockLimit stock matches ..250 run scoreboard players operatio
 scoreboard players set #summonWither price 10
 execute if score $stockLimit stock matches ..500 run scoreboard players operation #summonWither price /= 2 integers
 execute if score $stockLimit stock matches ..250 run scoreboard players operation #summonWither price /= 2 integers
-scoreboard players set #nuke price 12
-execute if score $stockLimit stock matches ..500 run scoreboard players operation #nuke price /= 2 integers
-execute if score $stockLimit stock matches ..250 run scoreboard players operation #nuke price /= 2 integers
+scoreboard players set #biohazard price 12
+execute if score $stockLimit stock matches ..500 run scoreboard players operation #biohazard price /= 2 integers
+execute if score $stockLimit stock matches ..250 run scoreboard players operation #biohazard price /= 2 integers
 scoreboard players set #cloakingField price 3
 execute if score $stockLimit stock matches ..500 run scoreboard players operation #cloakingField price /= 2 integers
 execute if score $stockLimit stock matches ..250 run scoreboard players operation #cloakingField price /= 2 integers

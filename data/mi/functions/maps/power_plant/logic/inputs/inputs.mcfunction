@@ -93,7 +93,7 @@ execute positioned 132.5 21.5 -95.5 if block ~ ~ ~ #minecraft:buttons[powered=tr
 execute positioned 132.5 21.5 -94.5 if block ~ ~ ~ #minecraft:buttons[powered=true] as @p[team=team1] run function mi:logic/interactions/sabotages/security_breach/try
 execute positioned 132.5 21.5 -93.5 if block ~ ~ ~ #minecraft:buttons[powered=true] as @p[team=team1] run function mi:logic/interactions/sabotages/plague/try
 execute positioned 132.5 21.5 -92.5 if block ~ ~ ~ #minecraft:buttons[powered=true] as @p[team=team1] run function mi:logic/interactions/sabotages/summon_wither/try
-execute positioned 132.5 21.5 -91.5 if block ~ ~ ~ #minecraft:buttons[powered=true] as @p[team=team1] run function mi:logic/interactions/sabotages/nuke/try
+execute positioned 132.5 21.5 -91.5 if block ~ ~ ~ #minecraft:buttons[powered=true] as @p[team=team1] run function mi:logic/interactions/sabotages/biohazard/try
 execute positioned 132.5 19.5 -95.5 if block ~ ~ ~ #minecraft:buttons[powered=true] as @p[team=team1] run function mi:logic/interactions/sabotages/cloaking_field/try
 execute positioned 132.5 19.5 -94.5 if block ~ ~ ~ #minecraft:buttons[powered=true] as @p[team=team1] run function mi:logic/interactions/sabotages/bulwark/try
 execute positioned 132.5 19.5 -93.5 if block ~ ~ ~ #minecraft:buttons[powered=true] as @p[team=team1] run function mi:logic/interactions/sabotages/daylight_savings/try
@@ -104,7 +104,7 @@ execute positioned 148.5 21.5 -157.5 if block ~ ~ ~ #minecraft:buttons[powered=t
 execute positioned 148.5 21.5 -158.5 if block ~ ~ ~ #minecraft:buttons[powered=true] as @p[team=team2] run function mi:logic/interactions/sabotages/security_breach/try
 execute positioned 148.5 21.5 -159.5 if block ~ ~ ~ #minecraft:buttons[powered=true] as @p[team=team2] run function mi:logic/interactions/sabotages/plague/try
 execute positioned 148.5 21.5 -160.5 if block ~ ~ ~ #minecraft:buttons[powered=true] as @p[team=team2] run function mi:logic/interactions/sabotages/summon_wither/try
-execute positioned 148.5 21.5 -161.5 if block ~ ~ ~ #minecraft:buttons[powered=true] as @p[team=team2] run function mi:logic/interactions/sabotages/nuke/try
+execute positioned 148.5 21.5 -161.5 if block ~ ~ ~ #minecraft:buttons[powered=true] as @p[team=team2] run function mi:logic/interactions/sabotages/biohazard/try
 execute positioned 148.5 19.5 -157.5 if block ~ ~ ~ #minecraft:buttons[powered=true] as @p[team=team2] run function mi:logic/interactions/sabotages/cloaking_field/try
 execute positioned 148.5 19.5 -158.5 if block ~ ~ ~ #minecraft:buttons[powered=true] as @p[team=team2] run function mi:logic/interactions/sabotages/bulwark/try
 execute positioned 148.5 19.5 -159.5 if block ~ ~ ~ #minecraft:buttons[powered=true] as @p[team=team2] run function mi:logic/interactions/sabotages/daylight_savings/try

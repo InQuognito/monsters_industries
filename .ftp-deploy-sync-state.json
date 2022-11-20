@@ -3071,7 +3071,7 @@
         },
         {
             "type": "folder",
-            "name": "data/mi/functions/logic/interactions/sabotages/nuke"
+            "name": "data/mi/functions/logic/interactions/sabotages/biohazard"
         },
         {
             "type": "folder",
@@ -3921,13 +3921,13 @@
         },
         {
             "type": "file",
-            "name": "data/mi/functions/logic/interactions/sabotages/nuke/buy.mcfunction",
+            "name": "data/mi/functions/logic/interactions/sabotages/biohazard/buy.mcfunction",
             "size": 960,
             "hash": "31e27d521b67e8799100eaf0b3832a9e62aa287f53ba681cc024383074230080"
         },
         {
             "type": "file",
-            "name": "data/mi/functions/logic/interactions/sabotages/nuke/try.mcfunction",
+            "name": "data/mi/functions/logic/interactions/sabotages/biohazard/try.mcfunction",
             "size": 809,
             "hash": "a5090625d2605a4d0524fa17312cd9a3d0c70850156e3b1dbb1acf01bd069812"
         },
