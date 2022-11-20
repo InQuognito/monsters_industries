@@ -221,7 +221,7 @@ scoreboard players set #killPercent vars 10
 scoreboard players operation #kill vars = $stockLimit stock
 scoreboard players operation #kill vars /= #killPercent vars
 
-scoreboard players set #sabotageTokensPerKill vars 4
+scoreboard players set #sabotageTokensPerKill vars 2
 execute if score $stockLimit stock matches ..500 run scoreboard players operation #sabotageTokensPerKill price /= 2 integers
 execute if score $stockLimit stock matches ..250 run scoreboard players operation #sabotageTokensPerKill price /= 2 integers
 
