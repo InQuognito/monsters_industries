@@ -19,7 +19,7 @@
 							"function": "minecraft:set_name",
 							"entity": "this",
 							"name": {
-								"text": "Sabotage Token",
+								"text": "S. Token",
 								"color": "aqua",
 								"bold": false,
 								"italic": false
