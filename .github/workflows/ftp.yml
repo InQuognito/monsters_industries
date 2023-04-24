@@ -16,4 +16,4 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD }}
         port: 21
 
-        server-dir: world/datapacks/monsters_industries/
+        server-dir: Monsters Industries/datapacks/monsters_industries/
