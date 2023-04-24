@@ -1,3 +1,11 @@
+team remove team1
+team remove team2
+team remove spectators
+
+team add team1
+team add team2
+team add spectators
+
 team modify team1 color aqua
 team modify team1 collisionRule pushOtherTeams
 team modify team1 deathMessageVisibility never
