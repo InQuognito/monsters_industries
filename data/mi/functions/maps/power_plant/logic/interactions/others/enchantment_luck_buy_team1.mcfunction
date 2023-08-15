@@ -1,10 +1,8 @@
 scoreboard players add #team1 enchantment 1
 
-execute if score #team1 enchantment matches 1 run data merge block 136 20 -124 {Text2:'{"text":"[ 1 / 3 ]"}'}
-execute if score #team1 enchantment matches 2 run data merge block 136 20 -124 {Text2:'{"text":"[ 2 / 3 ]"}'}
-execute if score #team1 enchantment matches 3 run data merge block 136 20 -124 {Text2:'{"text":"[ MAX ]"}'}
-execute if score #team1 enchantment matches 3 run data merge block 136 20 -124 {Text3:''}
-execute if score #team1 enchantment matches 3 run data merge block 136 20 -124 {Text4:''}
+execute if score #team1 enchantment matches 1 run data merge block 136 20 -124 {front_text:{color:"black",messages:['[""]','[{"text":"[ 1 / 3 ]"}]','[""]','[""]']},is_waxed:1b}
+execute if score #team1 enchantment matches 2 run data merge block 136 20 -124 {front_text:{color:"black",messages:['[""]','[{"text":"[ 2 / 3 ]"}]','[""]','[""]']},is_waxed:1b}
+execute if score #team1 enchantment matches 3 run data merge block 136 20 -124 {front_text:{color:"black",messages:['[""]','[{"text":"[ MAX ]"}]','[""]','[""]']},is_waxed:1b}
 execute if score #team1 enchantment matches 3 run setblock 136 19 -124 minecraft:air replace
 
 tag @s add self

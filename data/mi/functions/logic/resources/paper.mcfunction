@@ -11,5 +11,3 @@ execute if score #bankAccount temp matches 2.. run function mi:logic/currency/ad
 function mi:logic/update_credit_card
 
 execute at @s run playsound minecraft:ui.cartography_table.take_result block @s
-
-advancement grant @s only mi:utility/info/get_paper

@@ -1,0 +1,1 @@
+tellraw @s [{"text":"[!] ","color":"yellow","bold":true},{"text":"You have purchased your first Villager! Besides being a diverse fusion component, they also can be used as weak Employees! Keep in mind, these cannot be upgraded or removed once placed.","color":"gray","bold":false}]

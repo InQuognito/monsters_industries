@@ -1,0 +1,1 @@
+tellraw @s [{"text":"[!] ","color":"yellow","bold":true},{"text":"You have unlocked Neuron Worms! Neuron Worms can be fused with Villagers to create stronger Employees. These Employees produce resources much faster, but can also produce other types of resources besides paper after unlocking Management.","color":"gray","bold":false}]

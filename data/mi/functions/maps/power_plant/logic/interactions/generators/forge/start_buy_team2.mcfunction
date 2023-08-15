@@ -6,8 +6,8 @@ setblock 201 15 -130 minecraft:piston[facing=down] replace
 setblock 198 14 -133 minecraft:blast_furnace[facing=east,lit=true]{Lock:"ae88"} destroy
 setblock 199 13 -135 minecraft:chest[facing=east] destroy
 
-setblock 200 15 -129 minecraft:oak_wall_sign[facing=north]{Color:"black",Text2:'{"text":"Dropper Interval:"}',Text3:'{"text":"30s"}'} destroy
-setblock 199 15 -129 minecraft:oak_wall_sign[facing=north]{Color:"black",Text1:'{"text":"Upgrade Interval"}',Text2:'{"text":"[ 0 / 10 ]"}',Text3:'[{"score":{"name":"#forgeIntervalTokens","objective":"price"}},{"text":" Tokens"}]',Text4:'[{"score":{"name":"#forgeIntervalNetherite","objective":"price"}},{"text":" Netherite"}]'} destroy
+setblock 200 15 -129 minecraft:oak_wall_sign[facing=north]{front_text:{color:"black",messages:['[""]','[{"text":"Dropper Interval:"}]','[{"text":"30s"}]','[""]']},is_waxed:1b} destroy
+setblock 199 15 -129 minecraft:oak_wall_sign[facing=north]{front_text:{color:"black",messages:['[{"text":"Upgrade Interval"}]','[{"text":"[ 0 / 10 ]"}]','[{"score":{"name":"#forgeIntervalTokens","objective":"price"}},{"text":" Tokens"}]','[{"score":{"name":"#forgeIntervalNetherite","objective":"price"}},{"text":" Netherite"}]']},is_waxed:1b} destroy
 setblock 199 14 -129 minecraft:oak_button[face=wall,facing=north] replace
 
 tag @s add self

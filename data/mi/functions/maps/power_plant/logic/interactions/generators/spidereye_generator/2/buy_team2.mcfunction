@@ -3,7 +3,8 @@ setblock 154 19 -85 minecraft:rail[shape=south_east] replace
 setblock 156 19 -85 minecraft:rail[shape=south_west] replace
 setblock 155 19 -85 minecraft:powered_rail[shape=east_west] replace
 
-data merge block 151 20 -88 {Text2:'{"text":"[ MAX ]"}',Text3:'{"text":""}',Text4:'{"text":""}'}
+data merge block 151 20 -88 {front_text:{color:"black",messages:['[""]','[{"text":"[ MAX ]"}]','[""]','[""]']},is_waxed:1b}
+
 setblock 151 20 -87 minecraft:sea_lantern replace
 setblock 151 19 -88 minecraft:air replace
 

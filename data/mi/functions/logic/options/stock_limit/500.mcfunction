@@ -1,5 +1,5 @@
-data merge block -25 8 -108 {Text3:'"500"'}
-data merge block -27 8 -120 {Text3:'"500"'}
+data merge block -25 8 -108 {front_text:{color:"black",messages:['[""]','[""]','[{"text":"500"}]','[""]']},is_waxed:1b}
+data merge block -27 8 -120 {front_text:{color:"black",messages:['[""]','[""]','[{"text":"500"}]','[""]']},is_waxed:1b}
 
 setblock -26 6 -121 minecraft:white_concrete replace
 setblock -26 6 -120 minecraft:blue_concrete replace

@@ -126,13 +126,13 @@ execute positioned 183.5 15.5 -131.5 if block ~ ~ ~ #minecraft:buttons[powered=t
 execute positioned 183.5 15.5 -131.5 if block ~ ~ ~ #minecraft:buttons[powered=true] run setblock ~ ~ ~ minecraft:oak_button[face=wall,facing=north] replace
 
 # Spider Eye Generator
-execute positioned 129.5 19.5 -165.5 if block ~ ~ ~ #minecraft:buttons[powered=true] if block ~ ~1 ~ #minecraft:wall_signs{Text2:'{"text":"[ 1 / 2 ]"}'} as @p[team=team1] run function mi:logic/interactions/generators/spidereye_generator2_buy_try
-execute positioned 129.5 19.5 -165.5 if block ~ ~ ~ #minecraft:buttons[powered=true] if block ~ ~1 ~ #minecraft:wall_signs{Text2:'{"text":"[ 0 / 2 ]"}'} as @p[team=team1] run function mi:logic/interactions/generators/spidereye_generator1_buy_try
+execute positioned 129.5 19.5 -165.5 if block ~ ~ ~ #minecraft:buttons[powered=true] if block ~ ~1 ~ #minecraft:wall_signs{front_text:{color:"black",messages:['[""]','[{"text":"[ 1 / 2 ]"}]','[""]','[""]']},is_waxed:1b} as @p[team=team1] run function mi:logic/interactions/generators/spidereye_generator2_buy_try
+execute positioned 129.5 19.5 -165.5 if block ~ ~ ~ #minecraft:buttons[powered=true] if block ~ ~1 ~ #minecraft:wall_signs{front_text:{color:"black",messages:['[""]','[{"text":"[ 0 / 2 ]"}]','[""]','[""]']},is_waxed:1b} as @p[team=team1] run function mi:logic/interactions/generators/spidereye_generator1_buy_try
 execute positioned 129.5 19.5 -165.5 if block ~ ~ ~ #minecraft:buttons[powered=true] run setblock ~ ~ ~ polished_blackstone_button[face=wall,facing=south] replace
 execute positioned 129.5 20.5 -166.5 if block ~ ~ ~ minecraft:redstone_lamp[lit=true] run setblock ~ ~ ~ minecraft:redstone_lamp
 
-execute positioned 151.5 19.5 -87.5 if block ~ ~ ~ #minecraft:buttons[powered=true] if block ~ ~1 ~ #minecraft:wall_signs{Text2:'{"text":"[ 1 / 2 ]"}'} as @p[team=team2] run function mi:logic/interactions/generators/spidereye_generator2_buy_try
-execute positioned 151.5 19.5 -87.5 if block ~ ~ ~ #minecraft:buttons[powered=true] if block ~ ~1 ~ #minecraft:wall_signs{Text2:'{"text":"[ 0 / 2 ]"}'} as @p[team=team2] run function mi:logic/interactions/generators/spidereye_generator1_buy_try
+execute positioned 151.5 19.5 -87.5 if block ~ ~ ~ #minecraft:buttons[powered=true] if block ~ ~1 ~ #minecraft:wall_signs{front_text:{color:"black",messages:['[""]','[{"text":"[ 1 / 2 ]"}]','[""]','[""]']},is_waxed:1b} as @p[team=team2] run function mi:logic/interactions/generators/spidereye_generator2_buy_try
+execute positioned 151.5 19.5 -87.5 if block ~ ~ ~ #minecraft:buttons[powered=true] if block ~ ~1 ~ #minecraft:wall_signs{front_text:{color:"black",messages:['[""]','[{"text":"[ 0 / 2 ]"}]','[""]','[""]']},is_waxed:1b} as @p[team=team2] run function mi:logic/interactions/generators/spidereye_generator1_buy_try
 execute positioned 151.5 19.5 -87.5 if block ~ ~ ~ #minecraft:buttons[powered=true] run setblock ~ ~ ~ polished_blackstone_button[face=wall,facing=north] replace
 execute positioned 151.5 20.5 -86.5 if block ~ ~ ~ minecraft:redstone_lamp[lit=true] run setblock ~ ~ ~ minecraft:redstone_lamp
 

@@ -1,7 +1,7 @@
 execute if entity @s[team=team1] run function mi:logic/interactions/team_upgrades/management/team1
 execute if entity @s[team=team2] run function mi:logic/interactions/team_upgrades/management/team2
 
-data merge block ^ ^1 ^ {Text2:'{"text":"[ MAX ]"}',Text3:''}
+data merge block ^ ^1 ^ {front_text:{color:"black",messages:['[""]','[{"text":"[ MAX ]"}]','[""]','[""]']},is_waxed:1b}
 function mi:logic/interactions/team_upgrades/bought_max
 
 tag @s add self

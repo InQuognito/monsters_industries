@@ -1,14 +1,18 @@
 {
 	"criteria": {
-		"click_button": {
+		"requirement": {
 			"trigger": "minecraft:item_used_on_block",
 			"conditions": {
-				"player": {},
-				"location": {
-					"block": {
-						"tag": "minecraft:buttons"
+				"location": [
+					{
+						"condition": "minecraft:location_check",
+						"predicate": {
+							"block": {
+								"tag": "minecraft:buttons"
+							}
+						}
 					}
-				}
+				]
 			}
 		}
 	},

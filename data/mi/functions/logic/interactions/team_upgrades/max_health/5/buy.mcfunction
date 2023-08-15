@@ -4,7 +4,7 @@ execute if entity @s[team=team2] run scoreboard players set #team2MaxHealth temp
 execute if entity @s[team=team1] as @a[team=team1] run function mi:logic/heal
 execute if entity @s[team=team2] as @a[team=team2] run function mi:logic/heal
 
-data merge block ^ ^1 ^ {Color:"black",Text2:'{"text":"[ MAX ]"}',Text3:'',Text4:''}
+data merge block ^ ^1 ^ {front_text:{color:"black",messages:['[""]','[{"text":"[ MAX ]"}]','[""]','[""]']},is_waxed:1b}
 function mi:logic/interactions/team_upgrades/bought_max
 
 tag @s add self

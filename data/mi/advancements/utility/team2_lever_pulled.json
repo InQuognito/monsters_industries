@@ -1,27 +1,28 @@
 {
 	"criteria": {
-		"click_lever": {
+		"requirement": {
 			"trigger": "minecraft:item_used_on_block",
 			"conditions": {
-				"location": {
-					"block": {
-						"block": "minecraft:lever"
-					},
-					"position": {
-						"x": {
-							"min": 178.5,
-							"max": 178.5
-						},
-						"y": {
-							"min": 28.5,
-							"max": 28.5
-						},
-						"z": {
-							"min": -129.5,
-							"max": -121.5
+				"location": [
+					{
+						"condition": "minecraft:location_check",
+						"predicate": {
+							"position": {
+								"x": 178.5,
+								"y": 28.5,
+								"z": {
+									"min": -129.5,
+									"max": -121.5
+								}
+							},
+							"block": {
+								"blocks": [
+									"minecraft:lever"
+								]
+							}
 						}
 					}
-				}
+				]
 			}
 		}
 	},

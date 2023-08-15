@@ -1,8 +1,8 @@
-execute if score #team1CloakingField temp matches 1 as @e[type=#mi:hostile_mobs,type=!minecraft:wither,team=team1] run effect give @s minecraft:invisibility 1000000 255 true
+execute if score #team1CloakingField temp matches 1 as @e[type=#mi:hostile_mobs,type=!minecraft:wither,team=team1] run effect give @s minecraft:invisibility infinite 255 true
 execute if score #team1CloakingField temp matches 1 at @e[type=#mi:hostile_mobs,type=!minecraft:wither,team=team1] run particle minecraft:smoke ~ ~1 ~ 0.1 0.1 0.1 0 1 normal @a
 execute unless score #team1CloakingField temp matches 1 as @e[type=#mi:hostile_mobs,type=!minecraft:wither,team=team1] run effect clear @s minecraft:invisibility
 
-execute if score #team2CloakingField temp matches 1 as @e[type=#mi:hostile_mobs,type=!minecraft:wither,team=team2] run effect give @s minecraft:invisibility 1000000 255 true
+execute if score #team2CloakingField temp matches 1 as @e[type=#mi:hostile_mobs,type=!minecraft:wither,team=team2] run effect give @s minecraft:invisibility infinite 255 true
 execute if score #team2CloakingField temp matches 1 at @e[type=#mi:hostile_mobs,type=!minecraft:wither,team=team2] run particle minecraft:smoke ~ ~1 ~ 0.1 0.1 0.1 0 1 normal @a
 execute unless score #team2CloakingField temp matches 1 as @e[type=#mi:hostile_mobs,type=!minecraft:wither,team=team2] run effect clear @s minecraft:invisibility
 

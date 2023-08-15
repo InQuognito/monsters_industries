@@ -1,5 +1,5 @@
-data merge block -25 8 -109 {Text4:'{"text":"Rush Mode: ON"}'}
-data merge block -29 7 -122 {Text3:'{"text":"ON"}'}
+data merge block -25 8 -109 {front_text:{color:"black",messages:['[""]','[""]','[""]','[{"text":"Rush Mode: ON"}]']},is_waxed:1b}
+data merge block -29 7 -122 {front_text:{color:"black",messages:['[""]','[""]','[{"text":"ON"}]','[""]']},is_waxed:1b}
 
 setblock -29 6 -123 minecraft:lime_concrete replace
 
