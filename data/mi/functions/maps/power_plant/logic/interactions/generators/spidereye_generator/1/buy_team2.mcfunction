@@ -1,3 +1,5 @@
+scoreboard players set #team2SpiderEyeGenerator temp 1
+
 fill 154 19 -87 156 19 -86 minecraft:air
 setblock 154 19 -86 minecraft:rail[shape=south_east] replace
 setblock 156 19 -86 minecraft:rail[shape=south_west] replace

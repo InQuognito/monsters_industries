@@ -110,6 +110,13 @@
 			"condition": "minecraft:entity_properties",
 			"entity": "this",
 			"predicate": {
+				"nbt": "{Item:{id:\"minecraft:iron_ingot\"}}"
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
 				"nbt": "{Item:{id:\"minecraft:iron_leggings\"}}"
 			}
 		},
@@ -181,6 +188,13 @@
 			"entity": "this",
 			"predicate": {
 				"nbt": "{Item:{id:\"minecraft:netherite_leggings\"}}"
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{Item:{id:\"minecraft:poppy\"}}"
 			}
 		},
 		{

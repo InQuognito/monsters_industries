@@ -10,8 +10,8 @@ execute if score @s shop matches 9 run function mi:shop/weapons/dragons_breath_b
 
 execute if score @s shop matches 10 run function mi:shop/ammo/arrow_buy_try
 execute if score @s shop matches 11 run function mi:shop/ammo/arrow_buy_try
-execute if score @s shop matches 12 run function mi:shop/ammo/firework_buy_try
-execute if score @s shop matches 13 run function mi:shop/ammo/firework_buy_try
+execute if score @s shop matches 12 run function mi:shop/ammo/rocket_buy_try
+execute if score @s shop matches 13 run function mi:shop/ammo/rocket_buy_try
 execute if score @s shop matches 14 run function mi:shop/ammo/bayonet_buy_try
 execute if score @s shop matches 15 run function mi:shop/ammo/bayonet_buy_try
 execute if score @s shop matches 16 run function mi:shop/ammo/sniper_buy_try

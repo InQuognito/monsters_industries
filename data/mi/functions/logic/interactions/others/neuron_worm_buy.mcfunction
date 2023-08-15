@@ -8,6 +8,7 @@ execute if entity @s[team=team2] run setblock ^ ^ ^-1 minecraft:lime_terracotta 
 
 setblock ^ ^ ^ minecraft:air replace
 
+scoreboard players set mobShopMult temp 1
 loot give @s loot mi:mobs/others/neuron_worm
 
 scoreboard players operation clearMonsterToken temp = neuronWorm price

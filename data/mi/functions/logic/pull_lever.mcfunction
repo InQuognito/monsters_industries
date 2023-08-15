@@ -11,7 +11,7 @@ execute if score #bankAccount temp matches 2.. run function mi:logic/currency/ad
 
 function mi:logic/update_credit_card
 
-execute at @s run playsound minecraft:entity.item.pickup block @s
+execute if score @s clickLever <= #leverCps vars at @s run playsound minecraft:entity.item.pickup block @s
 
 advancement revoke @s only mi:utility/team1_lever_pulled
 advancement revoke @s only mi:utility/team2_lever_pulled
