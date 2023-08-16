@@ -4,6 +4,7 @@ summon minecraft:text_display -28.5 7.5 -103.5 {text:'{"text":"Team Red","color"
 
 # Options Display
 summon minecraft:text_display -25.5 9.0 -108.5 {Tags:["optionsDisplay"],billboard:center}
+function mi:logic/options/update
 
 # Difficulty
 setblock -31 8 -120 minecraft:birch_wall_sign[facing=east]{front_text:{color:"black",messages:['[{"text":"Mode:"}]','[""]','[{"text":"Casual","clickEvent":{"action":"run_command","value":"tellraw @s [{\\"text\\":\\"Casual:\\",\\"color\\":\\"gold\\"},{\\"text\\":\\"\\\\n\\"},{\\"text\\":\\"- \\",\\"color\\":\\"yellow\\"},{\\"text\\":\\"Respawns\\",\\"color\\":\\"gray\\"},{\\"text\\":\\"\\\\n\\"},{\\"text\\":\\"- \\",\\"color\\":\\"yellow\\"},{\\"text\\":\\"Keep Inventory\\",\\"color\\":\\"gray\\"},{\\"text\\":\\"\\\\n\\"},{\\"text\\":\\"- \\",\\"color\\":\\"yellow\\"},{\\"text\\":\\"\\\\\\"Normal\\\\\\" Game\\",\\"color\\":\\"gray\\"}]"}}]','[""]']},is_waxed:1b} destroy
