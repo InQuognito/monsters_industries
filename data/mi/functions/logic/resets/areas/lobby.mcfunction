@@ -39,8 +39,8 @@ execute if score $stockLimit options matches 1000 run setblock -26 6 -119 minecr
 # Rush Mode
 setblock -29 7 -122 minecraft:birch_wall_sign[facing=south]{front_text:{color:"black",messages:['[""]','[{"text":"Rush Mode:","clickEvent":{"action":"run_command","value":"tellraw @s [{\\"text\\":\\"Rush Mode:\\",\\"color\\":\\"gold\\"},{\\"text\\":\\"\\\\n\\"},{\\"text\\":\\"- \\",\\"color\\":\\"yellow\\"},{\\"text\\":\\"Begin the game with 1 employee\\",\\"color\\":\\"gray\\"},{\\"text\\":\\"\\\\n\\"},{\\"text\\":\\"- \\",\\"color\\":\\"yellow\\"},{\\"text\\":\\"Placing mobs grants Stock\\",\\"color\\":\\"gray\\"},{\\"text\\":\\"\\\\n\\"},{\\"text\\":\\"- \\",\\"color\\":\\"yellow\\"},{\\"text\\":\\"Disables cost scaling\\",\\"color\\":\\"gray\\"},{\\"text\\":\\"\\\\n\\"},{\\"text\\":\\"- \\",\\"color\\":\\"yellow\\"},{\\"text\\":\\"Sentries are disabled\\",\\"color\\":\\"gray\\"}]"}}]','[{"text":"OFF"}]','[""]']},is_waxed:1b} destroy
 
-execute if score $rushMode options matches 0 run setblock -29 7 -122 minecraft:red_concrete replace
-execute if score $rushMode options matches 0 run setblock -29 7 -122 minecraft:lime_concrete replace
+execute if score $rushMode options matches 0 run setblock -29 6 -123 minecraft:red_concrete replace
+execute if score $rushMode options matches 0 run setblock -29 6 -123 minecraft:lime_concrete replace
 
 # Credits
 function mi:logic/resets/areas/credits
