@@ -1,4 +1,4 @@
-data modify storage mi:data options set value []
+data modify storage mi:data options set value '[]'
 
 data modify storage mi:data options append value {"text":"Options\\n","color":"light_purple","bold":true,"underlined":true}
 
