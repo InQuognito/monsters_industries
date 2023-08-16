@@ -1,6 +1,6 @@
 # Join Teams
-summon minecraft:area_effect_cloud -28.5 7.0 -113.5 {Age:-2147483648,Duration:-1,WaitTime:-2147483648,CustomName:'{"text":"Team Aqua","color":"aqua","bold":true}',CustomNameVisible:1b}
-summon minecraft:area_effect_cloud -28.5 7.0 -103.5 {Age:-2147483648,Duration:-1,WaitTime:-2147483648,CustomName:'{"text":"Team Red","color":"red","bold":true}',CustomNameVisible:1b}
+summon minecraft:text_display -28.5 7.5 -113.5 {text:'{"text":"Team Aqua","color":"aqua","bold":true}'}
+summon minecraft:text_display -28.5 7.5 -103.5 {text:'{"text":"Team Red","color":"red","bold":true}'}
 
 # Settings Labels In Lobby
 setblock -25 8 -109 minecraft:birch_wall_sign[facing=west]{front_text:{color:"black",messages:['[{"text":"Mode:"}]','[""]','[{"text":"Casual","clickEvent":{"action":"run_command","value":"tellraw @s [{\\"text\\":\\"Casual:\\",\\"color\\":\\"gold\\"},{\\"text\\":\\"\\\\n\\"},{\\"text\\":\\"- \\",\\"color\\":\\"yellow\\"},{\\"text\\":\\"Respawns\\",\\"color\\":\\"gray\\"},{\\"text\\":\\"\\\\n\\"},{\\"text\\":\\"- \\",\\"color\\":\\"yellow\\"},{\\"text\\":\\"Keep Inventory\\",\\"color\\":\\"gray\\"},{\\"text\\":\\"\\\\n\\"},{\\"text\\":\\"- \\",\\"color\\":\\"yellow\\"},{\\"text\\":\\"\\\\\\"Normal\\\\\\" Game\\",\\"color\\":\\"gray\\"}]"}}]','[""]']},is_waxed:1b} destroy
