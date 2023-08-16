@@ -14,8 +14,8 @@ execute store result score #spectatorAmount temp run team list spectators
 
 function mi:logic/resets/game/scoreboards/variables
 
-execute if score $difficulty mode matches 0 run gamerule keepInventory true
-execute if score $difficulty mode matches 1 run gamerule keepInventory false
+execute if score $difficulty options matches 0 run gamerule keepInventory true
+execute if score $difficulty options matches 1 run gamerule keepInventory false
 
 execute if score $stockLimit stock matches 250 run bossbar set minecraft:1 max 250
 execute if score $stockLimit stock matches 500 run bossbar set minecraft:1 max 500

@@ -1,12 +1,10 @@
-data merge block -25 8 -109 {front_text:{color:"black",messages:['[{"text":"Mode:"}]','[""]','[{"text":"Hardened","clickEvent":{"action":"run_command","value":"tellraw @s [{\\"text\\":\\"Hardened:\\",\\"color\\":\\"gold\\"},{\\"text\\":\\"\\\\n\\"},{\\"text\\":\\"- \\",\\"color\\":\\"yellow\\"},{\\"text\\":\\"Respawns\\",\\"color\\":\\"gray\\"},{\\"text\\":\\"\\\\n\\"},{\\"text\\":\\"- \\",\\"color\\":\\"yellow\\"},{\\"text\\":\\"Drop Inventory\\",\\"color\\":\\"gray\\"},{\\"text\\":\\"\\\\n\\"},{\\"text\\":\\"- \\",\\"color\\":\\"yellow\\"},{\\"text\\":\\"Increased Death Penalty\\",\\"color\\":\\"gray\\"}]"}}]','[""]']},is_waxed:1b}
-data merge block -31 8 -120 {front_text:{color:"black",messages:['[""]','[""]','[{"text":"Hardened","clickEvent":{"action":"run_command","value":"tellraw @s [{\\"text\\":\\"Hardened:\\",\\"color\\":\\"gold\\"},{\\"text\\":\\"\\\\n\\"},{\\"text\\":\\"- \\",\\"color\\":\\"yellow\\"},{\\"text\\":\\"Respawns\\",\\"color\\":\\"gray\\"},{\\"text\\":\\"\\\\n\\"},{\\"text\\":\\"- \\",\\"color\\":\\"yellow\\"},{\\"text\\":\\"Drop Inventory\\",\\"color\\":\\"gray\\"},{\\"text\\":\\"\\\\n\\"},{\\"text\\":\\"- \\",\\"color\\":\\"yellow\\"},{\\"text\\":\\"Increased Death Penalty\\",\\"color\\":\\"gray\\"}]"}}]','[""]']},is_waxed:1b}
+scoreboard players set $difficulty options 1
+function mi:logic/options/update
+
+tellraw @a [{"text":"Mode: [","color":"white"},{"text":"Hardened","color":"blue"},{"text":"]","color":"white"}]
 
 setblock -32 6 -119 minecraft:white_concrete replace
 setblock -32 6 -120 minecraft:blue_concrete replace
 setblock -32 6 -121 minecraft:white_concrete replace
-
-tellraw @a [{"text":"Mode: [","color":"white"},{"text":"Hardened","color":"blue"},{"text":"]","color":"white"}]
-
-scoreboard players set $difficulty mode 1
 
 setblock ~ ~ ~ minecraft:stone_button[face=wall,facing=east] replace

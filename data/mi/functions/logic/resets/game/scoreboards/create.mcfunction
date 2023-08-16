@@ -27,7 +27,7 @@ scoreboard objectives add integers dummy
 scoreboard objectives add isDead deathCount
 scoreboard objectives add lighterLevel dummy
 scoreboard objectives add map dummy
-scoreboard objectives add mode dummy
+scoreboard objectives add options dummy
 scoreboard objectives add pickaxeLevel dummy
 scoreboard objectives add pos dummy
 scoreboard objectives add price dummy

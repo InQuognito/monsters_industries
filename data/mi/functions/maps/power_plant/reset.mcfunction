@@ -60,31 +60,31 @@ setblock 201 15 -129 minecraft:oak_wall_sign[facing=north]{front_text:{color:"bl
 setblock 201 14 -129 minecraft:oak_button[face=wall,facing=north] replace
 
 # Wall Street
-execute unless score $rushMode mode matches 1 run setblock 75 30 -112 minecraft:birch_wall_sign[facing=east]{front_text:{color:"black",messages:['[""]','[{"text":"Wall Street"}]','[{"text":"Exchange"}]','[""]']},is_waxed:1b} destroy
+execute unless score $rushMode options matches 1 run setblock 75 30 -112 minecraft:birch_wall_sign[facing=east]{front_text:{color:"black",messages:['[""]','[{"text":"Wall Street"}]','[{"text":"Exchange"}]','[""]']},is_waxed:1b} destroy
 
-execute unless score $rushMode mode matches 1 run setblock 75 29 -110 minecraft:birch_wall_sign[facing=east]{front_text:{color:"black",messages:['[""]','[{"score":{"name":"#wallStreet1","objective":"price"}},{"text":" Paper"}]','[{"score":{"name":"#wallStreet1","objective":"vars"}},{"text":" Stock"}]','[""]']},is_waxed:1b} destroy
-execute unless score $rushMode mode matches 1 run setblock 75 29 -112 minecraft:birch_wall_sign[facing=east]{front_text:{color:"black",messages:['[""]','[{"score":{"name":"#wallStreet2","objective":"price"}},{"text":" Paper"}]','[{"score":{"name":"#wallStreet2","objective":"vars"}},{"text":" Stock"}]','[""]']},is_waxed:1b} destroy
-execute unless score $rushMode mode matches 1 run setblock 75 29 -114 minecraft:birch_wall_sign[facing=east]{front_text:{color:"black",messages:['[""]','[{"score":{"name":"#wallStreet3","objective":"price"}},{"text":" Paper"}]','[{"score":{"name":"#wallStreet3","objective":"vars"}},{"text":" Stock"}]','[""]']},is_waxed:1b} destroy
+execute unless score $rushMode options matches 1 run setblock 75 29 -110 minecraft:birch_wall_sign[facing=east]{front_text:{color:"black",messages:['[""]','[{"score":{"name":"#wallStreet1","objective":"price"}},{"text":" Paper"}]','[{"score":{"name":"#wallStreet1","objective":"vars"}},{"text":" Stock"}]','[""]']},is_waxed:1b} destroy
+execute unless score $rushMode options matches 1 run setblock 75 29 -112 minecraft:birch_wall_sign[facing=east]{front_text:{color:"black",messages:['[""]','[{"score":{"name":"#wallStreet2","objective":"price"}},{"text":" Paper"}]','[{"score":{"name":"#wallStreet2","objective":"vars"}},{"text":" Stock"}]','[""]']},is_waxed:1b} destroy
+execute unless score $rushMode options matches 1 run setblock 75 29 -114 minecraft:birch_wall_sign[facing=east]{front_text:{color:"black",messages:['[""]','[{"score":{"name":"#wallStreet3","objective":"price"}},{"text":" Paper"}]','[{"score":{"name":"#wallStreet3","objective":"vars"}},{"text":" Stock"}]','[""]']},is_waxed:1b} destroy
 
-execute unless score $rushMode mode matches 1 run setblock 75 28 -114 minecraft:birch_button[face=wall,facing=east] replace
-execute unless score $rushMode mode matches 1 run setblock 75 28 -112 minecraft:birch_button[face=wall,facing=east] replace
-execute unless score $rushMode mode matches 1 run setblock 75 28 -110 minecraft:birch_button[face=wall,facing=east] replace
+execute unless score $rushMode options matches 1 run setblock 75 28 -114 minecraft:birch_button[face=wall,facing=east] replace
+execute unless score $rushMode options matches 1 run setblock 75 28 -112 minecraft:birch_button[face=wall,facing=east] replace
+execute unless score $rushMode options matches 1 run setblock 75 28 -110 minecraft:birch_button[face=wall,facing=east] replace
 
-execute unless score $rushMode mode matches 1 run setblock 205 30 -139 minecraft:spruce_wall_sign[facing=west]{front_text:{color:"black",messages:['[""]','[{"text":"Wall Street"}]','[{"text":"Exchange"}]','[""]']},is_waxed:1b} destroy
+execute unless score $rushMode options matches 1 run setblock 205 30 -139 minecraft:spruce_wall_sign[facing=west]{front_text:{color:"black",messages:['[""]','[{"text":"Wall Street"}]','[{"text":"Exchange"}]','[""]']},is_waxed:1b} destroy
 
-execute unless score $rushMode mode matches 1 run setblock 205 29 -141 minecraft:spruce_wall_sign[facing=west]{front_text:{color:"black",messages:['[""]','[{"score":{"name":"#wallStreet1","objective":"price"}},{"text":" Paper"}]','[{"score":{"name":"#wallStreet1","objective":"vars"}},{"text":" Stock"}]','[""]']},is_waxed:1b} destroy
-execute unless score $rushMode mode matches 1 run setblock 205 29 -139 minecraft:spruce_wall_sign[facing=west]{front_text:{color:"black",messages:['[""]','[{"score":{"name":"#wallStreet2","objective":"price"}},{"text":" Paper"}]','[{"score":{"name":"#wallStreet2","objective":"vars"}},{"text":" Stock"}]','[""]']},is_waxed:1b} destroy
-execute unless score $rushMode mode matches 1 run setblock 205 29 -137 minecraft:spruce_wall_sign[facing=west]{front_text:{color:"black",messages:['[""]','[{"score":{"name":"#wallStreet3","objective":"price"}},{"text":" Paper"}]','[{"score":{"name":"#wallStreet3","objective":"vars"}},{"text":" Stock"}]','[""]']},is_waxed:1b} destroy
+execute unless score $rushMode options matches 1 run setblock 205 29 -141 minecraft:spruce_wall_sign[facing=west]{front_text:{color:"black",messages:['[""]','[{"score":{"name":"#wallStreet1","objective":"price"}},{"text":" Paper"}]','[{"score":{"name":"#wallStreet1","objective":"vars"}},{"text":" Stock"}]','[""]']},is_waxed:1b} destroy
+execute unless score $rushMode options matches 1 run setblock 205 29 -139 minecraft:spruce_wall_sign[facing=west]{front_text:{color:"black",messages:['[""]','[{"score":{"name":"#wallStreet2","objective":"price"}},{"text":" Paper"}]','[{"score":{"name":"#wallStreet2","objective":"vars"}},{"text":" Stock"}]','[""]']},is_waxed:1b} destroy
+execute unless score $rushMode options matches 1 run setblock 205 29 -137 minecraft:spruce_wall_sign[facing=west]{front_text:{color:"black",messages:['[""]','[{"score":{"name":"#wallStreet3","objective":"price"}},{"text":" Paper"}]','[{"score":{"name":"#wallStreet3","objective":"vars"}},{"text":" Stock"}]','[""]']},is_waxed:1b} destroy
 
-execute unless score $rushMode mode matches 1 run setblock 205 28 -141 minecraft:spruce_button[face=wall,facing=west] replace
-execute unless score $rushMode mode matches 1 run setblock 205 28 -139 minecraft:spruce_button[face=wall,facing=west] replace
-execute unless score $rushMode mode matches 1 run setblock 205 28 -137 minecraft:spruce_button[face=wall,facing=west] replace
+execute unless score $rushMode options matches 1 run setblock 205 28 -141 minecraft:spruce_button[face=wall,facing=west] replace
+execute unless score $rushMode options matches 1 run setblock 205 28 -139 minecraft:spruce_button[face=wall,facing=west] replace
+execute unless score $rushMode options matches 1 run setblock 205 28 -137 minecraft:spruce_button[face=wall,facing=west] replace
 
-execute if score $rushMode mode matches 1 run setblock 75 30 -112 minecraft:birch_wall_sign[facing=east]{front_text:{color:"black",messages:['[""]','[{"text":"Wall Street"}]','[{"text":"Disabled"}]','[""]']},is_waxed:1b} destroy
-execute if score $rushMode mode matches 1 run fill 75 28 -114 75 29 -110 minecraft:air replace
+execute if score $rushMode options matches 1 run setblock 75 30 -112 minecraft:birch_wall_sign[facing=east]{front_text:{color:"black",messages:['[""]','[{"text":"Wall Street"}]','[{"text":"Disabled"}]','[""]']},is_waxed:1b} destroy
+execute if score $rushMode options matches 1 run fill 75 28 -114 75 29 -110 minecraft:air replace
 
-execute if score $rushMode mode matches 1 run setblock 205 30 -139 minecraft:spruce_wall_sign[facing=west]{front_text:{color:"black",messages:['[""]','[{"text":"Wall Street"}]','[{"text":"Disabled"}]','[""]']},is_waxed:1b} destroy
-execute if score $rushMode mode matches 1 run fill 205 28 -141 205 29 -137 minecraft:air replace
+execute if score $rushMode options matches 1 run setblock 205 30 -139 minecraft:spruce_wall_sign[facing=west]{front_text:{color:"black",messages:['[""]','[{"text":"Wall Street"}]','[{"text":"Disabled"}]','[""]']},is_waxed:1b} destroy
+execute if score $rushMode options matches 1 run fill 205 28 -141 205 29 -137 minecraft:air replace
 
 # Barricade 1
 clone 100 14 -79 102 16 -78 100 14 -98
@@ -148,21 +148,21 @@ teleport @e[type=minecraft:marker,tag=reset.objectMarker] 206.5 20.5 -133.5 90.0
 execute as @e[type=minecraft:marker,tag=reset.objectMarker] at @s run function mi:logic/resets/structures/team_upgrades/management
 
 # Sentries
-execute unless score $rushMode mode matches 1 run setblock 79 30 -103 minecraft:birch_wall_sign[facing=north]{front_text:{color:"black",messages:['[""]','[{"text":"Deploy Sentry"}]','[{"score":{"name":"#sentry","objective":"price"}},{"text":" Tokens"}]','[""]']},is_waxed:1b} destroy
-execute unless score $rushMode mode matches 1 run setblock 79 28 -103 minecraft:birch_wall_sign[facing=north]{front_text:{color:"black",messages:['[""]','[{"text":"Sentry Count"}]','[{"text":"[ 0 / 10 ]"}]','[""]']},is_waxed:1b} destroy
-execute unless score $rushMode mode matches 1 run setblock 79 29 -103 minecraft:birch_button[facing=north] replace
+execute unless score $rushMode options matches 1 run setblock 79 30 -103 minecraft:birch_wall_sign[facing=north]{front_text:{color:"black",messages:['[""]','[{"text":"Deploy Sentry"}]','[{"score":{"name":"#sentry","objective":"price"}},{"text":" Tokens"}]','[""]']},is_waxed:1b} destroy
+execute unless score $rushMode options matches 1 run setblock 79 28 -103 minecraft:birch_wall_sign[facing=north]{front_text:{color:"black",messages:['[""]','[{"text":"Sentry Count"}]','[{"text":"[ 0 / 10 ]"}]','[""]']},is_waxed:1b} destroy
+execute unless score $rushMode options matches 1 run setblock 79 29 -103 minecraft:birch_button[facing=north] replace
 
-execute unless score $rushMode mode matches 1 run setblock 201 30 -148 minecraft:spruce_wall_sign[facing=south]{front_text:{color:"black",messages:['[""]','[{"text":"Deploy Sentry"}]','[{"score":{"name":"#sentry","objective":"price"}},{"text":" Tokens"}]','[""]']},is_waxed:1b} destroy
-execute unless score $rushMode mode matches 1 run setblock 201 28 -148 minecraft:spruce_wall_sign[facing=south]{front_text:{color:"black",messages:['[""]','[{"text":"Sentry Count"}]','[{"text":"[ 0 / 10 ]"}]','[""]']},is_waxed:1b} destroy
-execute unless score $rushMode mode matches 1 run setblock 201 29 -148 minecraft:spruce_button[facing=south] replace
+execute unless score $rushMode options matches 1 run setblock 201 30 -148 minecraft:spruce_wall_sign[facing=south]{front_text:{color:"black",messages:['[""]','[{"text":"Deploy Sentry"}]','[{"score":{"name":"#sentry","objective":"price"}},{"text":" Tokens"}]','[""]']},is_waxed:1b} destroy
+execute unless score $rushMode options matches 1 run setblock 201 28 -148 minecraft:spruce_wall_sign[facing=south]{front_text:{color:"black",messages:['[""]','[{"text":"Sentry Count"}]','[{"text":"[ 0 / 10 ]"}]','[""]']},is_waxed:1b} destroy
+execute unless score $rushMode options matches 1 run setblock 201 29 -148 minecraft:spruce_button[facing=south] replace
 
-execute if score $rushMode mode matches 1 run setblock 79 30 -103 minecraft:birch_wall_sign[facing=north]{front_text:{color:"black",messages:['[""]','[{"text":"Sentries"}]','[{"text":"Disabled"}]','[""]']},is_waxed:1b} destroy
-execute if score $rushMode mode matches 1 run setblock 79 28 -103 minecraft:air replace
-execute if score $rushMode mode matches 1 run setblock 79 29 -103 minecraft:air replace
+execute if score $rushMode options matches 1 run setblock 79 30 -103 minecraft:birch_wall_sign[facing=north]{front_text:{color:"black",messages:['[""]','[{"text":"Sentries"}]','[{"text":"Disabled"}]','[""]']},is_waxed:1b} destroy
+execute if score $rushMode options matches 1 run setblock 79 28 -103 minecraft:air replace
+execute if score $rushMode options matches 1 run setblock 79 29 -103 minecraft:air replace
 
-execute if score $rushMode mode matches 1 run setblock 201 30 -148 minecraft:spruce_wall_sign[facing=south]{front_text:{color:"black",messages:['[""]','[{"text":"Sentries"}]','[{"text":"Disabled"}]','[""]']},is_waxed:1b} destroy
-execute if score $rushMode mode matches 1 run setblock 201 28 -148 minecraft:air
-execute if score $rushMode mode matches 1 run setblock 201 29 -148 minecraft:air
+execute if score $rushMode options matches 1 run setblock 201 30 -148 minecraft:spruce_wall_sign[facing=south]{front_text:{color:"black",messages:['[""]','[{"text":"Sentries"}]','[{"text":"Disabled"}]','[""]']},is_waxed:1b} destroy
+execute if score $rushMode options matches 1 run setblock 201 28 -148 minecraft:air
+execute if score $rushMode options matches 1 run setblock 201 29 -148 minecraft:air
 
 # Tavern
 setblock 73 19 -143 minecraft:barrel[facing=east]{Lock:"1e88"} destroy
