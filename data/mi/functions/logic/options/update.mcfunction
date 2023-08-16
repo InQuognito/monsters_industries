@@ -23,4 +23,4 @@ data modify storage mi:data options append value '{"text":"Rush Mode: ","color":
 execute if score $rushMode options matches 0 run data modify storage mi:data options append value '{"text":"OFF","color":"red"}'
 execute if score $rushMode options matches 1 run data modify storage mi:data options append value '{"text":"ON","color":"green"}'
 
-data modify entity @e[type=minecraft:text_display,tag=optionsDisplay,limit=1] text set value {"storage":"mi:data","nbt":"options"}
+data modify entity @e[type=minecraft:text_display,tag=optionsDisplay,limit=1] text set value {"storage":"mi:data","nbt":"options[]","interpret":true,"separator":""}
