@@ -214,12 +214,12 @@ scoreboard players set spiderEyeTrack2SpiderEye price 32
 
 # Kill/Death Stock Values
 scoreboard players set #killPercent vars 10
-scoreboard players operation #kill vars = $stockLimit stock
+scoreboard players operation #kill vars = $stockLimit options
 scoreboard players operation #kill vars /= #killPercent vars
 
 scoreboard players set #sabotageTokensPerKill vars 2
-execute if score $stockLimit stock matches ..500 run scoreboard players operation #sabotageTokensPerKill price /= 2 integers
-execute if score $stockLimit stock matches ..250 run scoreboard players operation #sabotageTokensPerKill price /= 2 integers
+execute if score $stockLimit options matches ..500 run scoreboard players operation #sabotageTokensPerKill price /= 2 integers
+execute if score $stockLimit options matches ..250 run scoreboard players operation #sabotageTokensPerKill price /= 2 integers
 
 # Tokens
 scoreboard players set #monsterTokenPaper price 64
@@ -279,35 +279,35 @@ scoreboard players operation #netheriteMaxTeam2 vars *= #team2Amount temp
 
 # Sabotages
 scoreboard players set #factoryShutdown price 6
-execute if score $stockLimit stock matches ..500 run scoreboard players operation #factoryShutdown price /= 2 integers
-execute if score $stockLimit stock matches ..250 run scoreboard players operation #factoryShutdown price /= 2 integers
+execute if score $stockLimit options matches ..500 run scoreboard players operation #factoryShutdown price /= 2 integers
+execute if score $stockLimit options matches ..250 run scoreboard players operation #factoryShutdown price /= 2 integers
 scoreboard players set #securityBreach price 6
-execute if score $stockLimit stock matches ..500 run scoreboard players operation #securityBreach price /= 2 integers
-execute if score $stockLimit stock matches ..250 run scoreboard players operation #securityBreach price /= 2 integers
+execute if score $stockLimit options matches ..500 run scoreboard players operation #securityBreach price /= 2 integers
+execute if score $stockLimit options matches ..250 run scoreboard players operation #securityBreach price /= 2 integers
 scoreboard players set #plague price 8
-execute if score $stockLimit stock matches ..500 run scoreboard players operation #plague price /= 2 integers
-execute if score $stockLimit stock matches ..250 run scoreboard players operation #plague price /= 2 integers
+execute if score $stockLimit options matches ..500 run scoreboard players operation #plague price /= 2 integers
+execute if score $stockLimit options matches ..250 run scoreboard players operation #plague price /= 2 integers
 scoreboard players set #summonWither price 10
-execute if score $stockLimit stock matches ..500 run scoreboard players operation #summonWither price /= 2 integers
-execute if score $stockLimit stock matches ..250 run scoreboard players operation #summonWither price /= 2 integers
+execute if score $stockLimit options matches ..500 run scoreboard players operation #summonWither price /= 2 integers
+execute if score $stockLimit options matches ..250 run scoreboard players operation #summonWither price /= 2 integers
 scoreboard players set #biohazard price 12
-execute if score $stockLimit stock matches ..500 run scoreboard players operation #biohazard price /= 2 integers
-execute if score $stockLimit stock matches ..250 run scoreboard players operation #biohazard price /= 2 integers
+execute if score $stockLimit options matches ..500 run scoreboard players operation #biohazard price /= 2 integers
+execute if score $stockLimit options matches ..250 run scoreboard players operation #biohazard price /= 2 integers
 scoreboard players set #cloakingField price 3
-execute if score $stockLimit stock matches ..500 run scoreboard players operation #cloakingField price /= 2 integers
-execute if score $stockLimit stock matches ..250 run scoreboard players operation #cloakingField price /= 2 integers
+execute if score $stockLimit options matches ..500 run scoreboard players operation #cloakingField price /= 2 integers
+execute if score $stockLimit options matches ..250 run scoreboard players operation #cloakingField price /= 2 integers
 scoreboard players set #bulwark price 3
-execute if score $stockLimit stock matches ..500 run scoreboard players operation #bulwark price /= 2 integers
-execute if score $stockLimit stock matches ..250 run scoreboard players operation #bulwark price /= 2 integers
+execute if score $stockLimit options matches ..500 run scoreboard players operation #bulwark price /= 2 integers
+execute if score $stockLimit options matches ..250 run scoreboard players operation #bulwark price /= 2 integers
 scoreboard players set #daylightSavings price 4
-execute if score $stockLimit stock matches ..500 run scoreboard players operation #daylightSavings price /= 2 integers
-execute if score $stockLimit stock matches ..250 run scoreboard players operation #daylightSavings price /= 2 integers
+execute if score $stockLimit options matches ..500 run scoreboard players operation #daylightSavings price /= 2 integers
+execute if score $stockLimit options matches ..250 run scoreboard players operation #daylightSavings price /= 2 integers
 scoreboard players set #directExposure price 4
-execute if score $stockLimit stock matches ..500 run scoreboard players operation #directExposure price /= 2 integers
-execute if score $stockLimit stock matches ..250 run scoreboard players operation #directExposure price /= 2 integers
+execute if score $stockLimit options matches ..500 run scoreboard players operation #directExposure price /= 2 integers
+execute if score $stockLimit options matches ..250 run scoreboard players operation #directExposure price /= 2 integers
 scoreboard players set #directDeposit price 4
-execute if score $stockLimit stock matches ..500 run scoreboard players operation #directDeposit price /= 2 integers
-execute if score $stockLimit stock matches ..250 run scoreboard players operation #directDeposit price /= 2 integers
+execute if score $stockLimit options matches ..500 run scoreboard players operation #directDeposit price /= 2 integers
+execute if score $stockLimit options matches ..250 run scoreboard players operation #directDeposit price /= 2 integers
 
 # Team Upgrades
 scoreboard players set #bankAccount1 price 576
@@ -333,13 +333,13 @@ scoreboard players set #swiftness3 price 704
 # Wall Street
 scoreboard players set #wallStreetMax vars 50
 scoreboard players set #wallStreet1Percent vars 200
-scoreboard players operation #wallStreet1 vars = $stockLimit stock
+scoreboard players operation #wallStreet1 vars = $stockLimit options
 scoreboard players operation #wallStreet1 vars /= #wallStreet1Percent vars
 scoreboard players set #wallStreet2Percent vars 100
-scoreboard players operation #wallStreet2 vars = $stockLimit stock
+scoreboard players operation #wallStreet2 vars = $stockLimit options
 scoreboard players operation #wallStreet2 vars /= #wallStreet2Percent vars
 scoreboard players set #wallStreet3Percent vars 50
-scoreboard players operation #wallStreet3 vars = $stockLimit stock
+scoreboard players operation #wallStreet3 vars = $stockLimit options
 scoreboard players operation #wallStreet3 vars /= #wallStreet3Percent vars
 scoreboard players set #wallStreet1 price 128
 scoreboard players set #wallStreet2 price 243

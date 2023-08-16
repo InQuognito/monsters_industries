@@ -27,7 +27,7 @@ scoreboard objectives remove integers
 scoreboard objectives remove isDead
 scoreboard objectives remove lighterLevel
 scoreboard objectives remove map
-scoreboard objectives remove mode
+#scoreboard objectives remove options
 scoreboard objectives remove pickaxeLevel
 scoreboard objectives remove pos
 scoreboard objectives remove price

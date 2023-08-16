@@ -1,4 +1,4 @@
-scoreboard players set $stockLimit stock 1000
+scoreboard players set $stockLimit options 1000
 function mi:logic/options/update
 
 tellraw @a [{"text":"Stock Limit: [","color":"white"},{"text":"1000","color":"blue"},{"text":"]","color":"white"}]

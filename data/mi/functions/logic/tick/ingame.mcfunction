@@ -20,8 +20,8 @@ execute as @e[type=#mi:mobs] run function mi:logic/health/health_check
 
 scoreboard players operation $team1StockPercent temp = $team1 stock
 scoreboard players operation $team1StockPercent temp *= 100 integers
-scoreboard players operation $team1StockPercent temp /= $stockLimit stock
+scoreboard players operation $team1StockPercent temp /= $stockLimit options
 
 scoreboard players operation $team2StockPercent temp = $team2 stock
 scoreboard players operation $team2StockPercent temp *= 100 integers
-scoreboard players operation $team2StockPercent temp /= $stockLimit stock
+scoreboard players operation $team2StockPercent temp /= $stockLimit options
