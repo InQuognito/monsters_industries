@@ -1,7 +1,3 @@
-# Join Teams
-summon minecraft:text_display -28.5 7.5 -113.5 {text:'{"text":"Team Aqua","color":"aqua","bold":true}'}
-summon minecraft:text_display -28.5 7.5 -103.5 {text:'{"text":"Team Red","color":"red","bold":true}'}
-
 # 3DSCarnaje
 setblock -34 6 -106 minecraft:dark_oak_wall_sign[facing=east]{front_text:{color:"orange",messages:['[""]','[{"text":"3DSCarnaje"}]','[{"text":"Alpha Tester"}]','[""]'],has_glowing_text:1b},is_waxed:1b} destroy
 setblock -34 5 -106 minecraft:player_wall_head[facing=east]{SkullOwner:{Name:"fleastack2"}} destroy
