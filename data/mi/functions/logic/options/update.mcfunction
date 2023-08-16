@@ -8,11 +8,15 @@ execute if score $difficulty options matches 0 run data modify storage mi:data o
 execute if score $difficulty options matches 1 run data modify storage mi:data options append value {"text":"Hardened","color":"yellow"}
 execute if score $difficulty options matches 2 run data modify storage mi:data options append value {"text":"Nightmare","color":"red"}
 
+data modify storage mi:data options append value {"text":"\\n"}
+
 data modify storage mi:data options append value {"text":"Stock Limit: ","color":"white"}
 
 execute if score $stockLimit options matches 250 run data modify storage mi:data options append value {"text":"250","color":"blue"}
 execute if score $stockLimit options matches 500 run data modify storage mi:data options append value {"text":"500","color":"blue"}
 execute if score $stockLimit options matches 1000 run data modify storage mi:data options append value {"text":"1000","color":"blue"}
+
+data modify storage mi:data options append value {"text":"\\n"}
 
 data modify storage mi:data options append value {"text":"Rush Mode: ","color":"white"}
 
