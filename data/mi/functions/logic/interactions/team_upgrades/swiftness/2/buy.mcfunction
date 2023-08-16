@@ -1,7 +1,8 @@
 execute if entity @s[team=team1] run scoreboard players set #team1Swiftness temp 2
 execute if entity @s[team=team2] run scoreboard players set #team2Swiftness temp 2
 
-data merge block ^ ^1 ^ {front_text:{color:"black",messages:['[""]','[{"text":"[ 2 / 3 ]"}]','[{"score":{"name":"#swiftness3","objective":"price"}},{"text":" Paper"}]','[""]']},is_waxed:1b}
+data modify block ^ ^1 ^ front_text.messages[1] set value '[{"text":"[ 2 / 3 ]"}]'
+data modify block ^ ^1 ^ front_text.messages[2] set value '[{"score":{"name":"#swiftness3","objective":"price"}},{"text":" Paper"}]'
 
 tag @s add self
 title @s actionbar [{"text":"You have purchased ","color":"green"},{"text":"Swiftness 2","color":"gold"},{"text":"!","color":"green"}]

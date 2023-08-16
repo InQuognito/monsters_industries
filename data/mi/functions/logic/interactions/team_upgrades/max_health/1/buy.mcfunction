@@ -4,7 +4,8 @@ execute if entity @s[team=team2] run scoreboard players set #team2MaxHealth temp
 execute if entity @s[team=team1] as @a[team=team1] run function mi:logic/heal
 execute if entity @s[team=team2] as @a[team=team2] run function mi:logic/heal
 
-data merge block ^ ^1 ^ {front_text:{color:"black",messages:['[""]','[{"text":"[ 1 / 5 ]"}]','[{"score":{"name":"#maxHealth2","objective":"price"}},{"text":" Paper"}]','[""]']},is_waxed:1b}
+data modify block ^ ^1 ^ front_text.messages[1] set value '[{"text":"[ 1 / 5 ]"}]'
+data modify block ^ ^1 ^ front_text.messages[2] set value '[{"score":{"name":"#maxHealth2","objective":"price"}},{"text":" Paper"}]'
 
 tag @s add self
 title @s actionbar [{"text":"You have purchased ","color":"green"},{"text":"Max Health 1","color":"gold"},{"text":"!","color":"green"}]
