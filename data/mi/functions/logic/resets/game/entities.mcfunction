@@ -1,5 +1,3 @@
-kill @e[type=!minecraft:player]
-
 # InQuognito Armor Stand
 summon minecraft:armor_stand -34.5 8.7 -108.5 {Invulnerable:1b,NoBasePlate:1b,NoGravity:1b,ShowArms:1b,Rotation:[280f],ArmorItems:[{id:"leather_boots",Count:1b,tag:{display:{color:16777215}}},{id:"leather_leggings",Count:1b,tag:{display:{color:16777215}}},{id:"leather_chestplate",Count:1b,tag:{display:{color:16777215}}},{id:"player_head",Count:1b,tag:{SkullOwner:"InQuognito"}}],HandItems:[{},{}],CustomName:'{"text":"InQuognito","color":"white","bold":true}',CustomNameVisible:1b,DisabledSlots:2039583,Pose:{Body:[0f,356f,0f],Head:[348f,350f,0f],LeftLeg:[22f,0f,356f],RightLeg:[358f,0f,2f],LeftArm:[0f,14f,255f],RightArm:[0f,52f,114f]}}
 summon minecraft:armor_stand -35.2 9.7 -108.5 {Invisible:1b,Invulnerable:1b,NoBasePlate:1b,NoGravity:1b,ShowArms:1b,Rotation:[270f],ArmorItems:[{},{},{},{}],HandItems:[{id:"command_block",Count:1b},{id:"chain_command_block",Count:1b}],DisabledSlots:2039583,Pose:{LeftArm:[0f,325f,225f],RightArm:[0f,22f,135f]}}

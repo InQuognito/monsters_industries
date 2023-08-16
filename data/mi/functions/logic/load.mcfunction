@@ -1,3 +1,5 @@
+kill @e[type=!minecraft:player]
+
 function mi:logic/resets/game/bossbars
 function mi:logic/resets/game/gamerules
 function mi:logic/resets/game/teams
