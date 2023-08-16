@@ -3,7 +3,7 @@ summon minecraft:text_display -28.5 7.5 -113.5 {text:'{"text":"Team Aqua","color
 summon minecraft:text_display -28.5 7.5 -103.5 {text:'{"text":"Team Red","color":"red","bold":true}',billboard:center}
 
 # Options Display
-summon minecraft:text_display -25.5 9.0 -108.5 {Tags:["optionsDisplay"],billboard:center}
+summon minecraft:text_display -25.5 8.0 -108.5 {Tags:["optionsDisplay"],billboard:center}
 function mi:logic/options/update
 
 # Difficulty
