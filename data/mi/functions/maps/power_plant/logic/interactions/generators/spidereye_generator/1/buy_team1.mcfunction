@@ -9,7 +9,7 @@ data merge block 129 20 -166 {front_text:{color:"black",messages:['[""]','[{"tex
 
 tag @s add self
 title @s actionbar {"text":"You shortened the track!","color":"green"}
-tellraw @a[team=team1,tag=!self] {"text":"Your teammate shortened the mineshaft track!","color":"green"}
+tellraw @a[team=team1,tag=!self] [{"selector":"@s","color":"yellow"},{"text":" shortened the mineshaft track!","color":"green"}]
 tag @s remove self
 
 scoreboard players operation clearPaper temp = spiderEyeTrack1Paper price

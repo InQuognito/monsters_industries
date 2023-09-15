@@ -3,7 +3,7 @@ fill 123 19 -96 122 19 -96 minecraft:air
 
 tag @s add self
 title @s actionbar {"text":"You clear the old barricade...","color":"green"}
-tellraw @a[team=team1,tag=!self] {"text":"Your teammate cleared the sabotage room barricade!","color":"green"}
+tellraw @a[team=team1,tag=!self] [{"selector":"@s","color":"yellow"},{"text":" cleared the sabotage room barricade!","color":"green"}]
 tag @s remove self
 
 scoreboard players operation clearPaper temp = #sabotageBarricade price

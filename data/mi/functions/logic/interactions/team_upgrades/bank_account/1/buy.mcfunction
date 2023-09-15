@@ -11,9 +11,9 @@ execute if entity @s[team=team1] positioned 87.5 27.5 -135.5 run function mi:log
 execute if entity @s[team=team2] positioned 193.5 27.5 -115.5 run function mi:logic/transfer_to_bank_account_employees
 
 tag @s add self
-title @s actionbar [{"text":"You have purchased a ","color":"green"},{"text":"Personal Bank Account","color":"gold"},{"text":"!","color":"green"}]
-execute if entity @s[team=team1] run tellraw @a[team=team1,tag=!self] [{"text":"Your teammate has purchased a ","color":"green"},{"text":"Personal Bank Account","color":"gold"},{"text":"!","color":"green"}]
-execute if entity @s[team=team2] run tellraw @a[team=team2,tag=!self] [{"text":"Your teammate has purchased a ","color":"green"},{"text":"Personal Bank Account","color":"gold"},{"text":"!","color":"green"}]
+title @s actionbar [{"text":"You have purchased ","color":"green"},{"text":"Personal Bank Account","color":"gold"},{"text":"!","color":"green"}]
+execute if entity @s[team=team1] run tellraw @a[team=team1,tag=!self] [{"selector":"@s","color":"yellow"},{"text":" has purchased ","color":"green"},{"text":"Personal Bank Account","color":"gold"},{"text":"!","color":"green"}]
+execute if entity @s[team=team2] run tellraw @a[team=team2,tag=!self] [{"selector":"@s","color":"yellow"},{"text":" has purchased ","color":"green"},{"text":"Personal Bank Account","color":"gold"},{"text":"!","color":"green"}]
 tag @s remove self
 
 execute if entity @s[team=team1] as @a[team=team1] run function mi:logic/credit_card

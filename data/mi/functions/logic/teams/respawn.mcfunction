@@ -4,7 +4,7 @@ title @s title ""
 
 gamemode adventure @s
 
-function mi:logic/restore_items
+function mi:logic/players/items
 
 execute if entity @s[team=team1] if score #team1Plague temp matches 1 run function mi:logic/interactions/sabotages/plague/apply
 execute if entity @s[team=team2] if score #team2Plague temp matches 1 run function mi:logic/interactions/sabotages/plague/apply

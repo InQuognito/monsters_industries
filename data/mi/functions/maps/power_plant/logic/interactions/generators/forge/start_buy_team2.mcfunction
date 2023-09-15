@@ -12,7 +12,7 @@ setblock 199 14 -129 minecraft:oak_button[face=wall,facing=north] replace
 
 tag @s add self
 title @s actionbar {"text":"You start up the old forge.","color":"green"}
-tellraw @a[team=team2,tag=!self] {"text":"Your teammate started up the forge!","color":"green"}
+tellraw @a[team=team2,tag=!self] [{"selector":"@s","color":"yellow"},{"text":" started up the forge!","color":"green"}]
 tag @s remove self
 
 fill 201 14 -129 201 15 -129 minecraft:air destroy

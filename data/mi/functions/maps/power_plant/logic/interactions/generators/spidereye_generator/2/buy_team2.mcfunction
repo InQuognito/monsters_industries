@@ -12,7 +12,7 @@ setblock 151 19 -88 minecraft:air replace
 
 tag @s add self
 title @s actionbar {"text":"You shortened the track!","color":"green"}
-tellraw @a[team=team2,tag=!self] {"text":"Your teammate shortened the mineshaft track!","color":"green"}
+tellraw @a[team=team2,tag=!self] [{"selector":"@s","color":"yellow"},{"text":" shortened the mineshaft track!","color":"green"}]
 tag @s remove self
 
 scoreboard players operation clearPaper temp = spiderEyeTrack2Paper price

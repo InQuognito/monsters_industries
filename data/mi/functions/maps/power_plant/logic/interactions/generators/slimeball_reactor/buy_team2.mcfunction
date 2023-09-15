@@ -2,7 +2,7 @@ scoreboard players operation #team2 production.slimeball *= 2 integers
 
 tag @s add self
 title @s actionbar {"text":"You repair the old reactor.","color":"green"}
-tellraw @a[team=team2,tag=!self] {"text":"Your teammate repaired the secondary slimeball reactor!","color":"green"}
+tellraw @a[team=team2,tag=!self] [{"selector":"@s","color":"yellow"},{"text":" repaired the secondary slimeball reactor!","color":"green"}]
 tag @s remove self
 
 fill 183 15 -132 183 16 -132 minecraft:air
