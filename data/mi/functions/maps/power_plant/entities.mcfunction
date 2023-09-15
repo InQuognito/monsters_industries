@@ -11,8 +11,8 @@ function mi:maps/power_plant/logic/mob_shop/team1/load_undead
 function mi:maps/power_plant/logic/mob_shop/team2/load_undead
 
 # Rush options Employees
-execute if score $rushMode options matches 1 positioned 84.5 27.0 -135.5 summon minecraft:zombified_piglin run function mi:logic/employees/init/team1
-execute if score $rushMode options matches 1 positioned 196.5 27.0 -115.5 summon minecraft:zombified_piglin run function mi:logic/employees/init/team2
+execute if score $rushMode options matches 1 positioned 84.5 27.0 -135.5 summon minecraft:zombified_piglin run function mi:logic/employees/init
+execute if score $rushMode options matches 1 positioned 196.5 27.0 -115.5 summon minecraft:zombified_piglin run function mi:logic/employees/init
 
 # Decor
 summon minecraft:item_frame 103.5 29.5 -128.5 {Facing:1b,Fixed:1b,Invisible:1b,Invulnerable:1b,Item:{id:"minecraft:paper",Count:1b,tag:{display:{Name:'{"text":"Sign Papers"}'}}},ItemRotation:1b}

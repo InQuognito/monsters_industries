@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:'[{\"text\":\"Employee\",\"italic\":false,\"color\":\"aqua\"}]'}}",
+							"tag": "{display:{Name:'[{\"text\":\"Employee\",\"italic\":false,\"color\":\"aqua\"}]'},EntityTag:{Team:team1}}",
 							"conditions": [
 								{
 									"condition": "minecraft:entity_properties",
@@ -22,7 +22,7 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:'[{\"text\":\"Employee\",\"italic\":false,\"color\":\"red\"}]'}}",
+							"tag": "{display:{Name:'[{\"text\":\"Employee\",\"italic\":false,\"color\":\"red\"}]'},EntityTag:{Team:team2}}",
 							"conditions": [
 								{
 									"condition": "minecraft:entity_properties",

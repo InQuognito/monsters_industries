@@ -18,5 +18,4 @@ execute if score #team1 employees matches 11.. run advancement grant @a[team=tea
 
 execute if score #team1 employees matches 12.. run function mi:logic/employees/return_team1
 
-data merge entity @s {Invulnerable:1,NoAI:1,Silent:1}
-tag @s add employee
+function mi:logic/employees/init
